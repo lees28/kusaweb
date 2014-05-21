@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="main_container">
+	<div id="main_photo_stream">
+		<a class="jcarousel-prev" href="#"><img class="arrow" src="{{ STATIC_URL }}images/left_arrow.png"></a>
+	    <div class="jcarousel">
+	    	<ul>
+		        <li><img src="{{ STATIC_URL }}images/photo1.jpg"></li>
+		        <li><img src="{{ STATIC_URL }}images/photo2.jpg"></li>
+		        <li><img src="{{ STATIC_URL }}images/photo3.jpg"></li>
+	        </ul>
+	    </div>
+	    <a class="jcarousel-next" href="#"><img class="arrow" src="{{ STATIC_URL }}images/right_arrow.png"></a>
+	    <br style="clear: left;" />
+	    <div class="jcarousel-pagination"></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block about %}
+<div id="about_container">
+	<div id="about_us">
+	    <h1> About Us </h1>
+	    <p> KUSA is the Duke University Korean Student Organization. 
+	    KUSA is the Duke University Korean Student Organization. 
+	    KUSA is the Duke University Korean Student Organization. 
+	    KUSA is the Duke University Korean Student Organization. 
+	    KUSA is the Duke University Korean Student Organization. 
+	    KUSA is the Duke University Korean Student Organization. 
+	    </p>
+	</div>
+</div>
+{% endblock %}
+
+{% block exec %}
+<div id="exec_container">
+	<div id="exec">
+	    <h1> Exec Members </h1>
+	    <p> Here is a list of Exec members of KUSA!!
+	    Here is a list of Exec members of KUSA!!
+	    Here is a list of Exec members of KUSA!!
+	    Here is a list of Exec members of KUSA!!
+	    Here is a list of Exec members of KUSA!!
+	    Here is a list of Exec members of KUSA!!
+	    </p>
+	</div>
+</div>
+{% endblock %}
+
+{% block photo %}
+<div id="photo_container">
+	<div id="photos">
+	    <h1> Photos </h1>
+	    <p> Here is a list of photos/vides and other goodies of KUSA!!
+	    Here is a list of photos/vides and other goodies of KUSA!!
+	    Here is a list of photos/vides and other goodies of KUSA!!
+	    Here is a list of photos/vides and other goodies of KUSA!!
+	    Here is a list of photos/vides and other goodies of KUSA!!
+	    Here is a list of photos/vides and other goodies of KUSA!!
+	    Here is a list of photos/vides and other goodies of KUSA!!
+	    </p>
+	    <div id="toTop"><button>top</button></div>
+	</div>
+</div>
+{% endblock %}
+

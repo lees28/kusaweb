@@ -1,0 +1,63 @@
+body {
+	font-family: arial;
+}
+
+h1 {
+	font-size: 80px	;
+}
+
+#index_container {
+	margin: 200px auto;
+	width: 700px;
+	height: 145px;
+}
+
+#logo-homepage {
+	float: left;
+	width: 38%;
+	height: 100%;
+	padding-right: 10px;
+	border-right: 2px solid black;
+}
+
+#logo-homepage h1, h3 {
+	margin:0;
+}
+
+
+#choose_lang {
+	float: right;
+	width: 60%;
+	height: 100%;
+	display: inline-block;
+}
+
+#choose_lang a {
+	text-decoration: none;
+	color:black;
+}
+
+#lang-eng {
+	float: left;
+	text-align: center;
+	width: 49%;
+	padding: 60px 0;
+	font-size:25px;
+}
+
+span {
+	display: inline-block;
+	width: 0;
+	height: 50px;
+	margin: 50px 0;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+#lang-kor {
+	float: right;	
+	text-align: center;
+	width: 49%;
+	padding: 60px 0;
+	font-size:25px;	
+}
