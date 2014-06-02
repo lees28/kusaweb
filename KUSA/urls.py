@@ -19,5 +19,4 @@ urlpatterns = patterns('',
     
     # contact form
     url(r'^contact/?$', 'KUSAapp.views.contact', name='contact'),
-    url(r'^thanks/?$', '.KUSAapp.views.thanks', name='thanks'),
 )
