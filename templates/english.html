@@ -1,26 +1,31 @@
 {% extends "base.html" %}
 
-{% block main %}
-<div id="main_container">
-	<div id="main_photo_stream">
-		<a class="jcarousel-prev" href="#"><img class="arrow" src="{{ STATIC_URL }}images/left_arrow.png"></a>
-	    <div class="jcarousel">
-	    	<ul>
-		        <li><img src="{{ STATIC_URL }}images/photo1.jpg"></li>
-		        <li><img src="{{ STATIC_URL }}images/photo2.jpg"></li>
-		        <li><img src="{{ STATIC_URL }}images/photo3.jpg"></li>
-	        </ul>
+{% block carousel %}
+<div id="carousel" data-stellar-background-ratio="1" data-stellar-horizontal-offset="1000">
+	<div class="narrower-container">
+		<div id="carousel-and-nav">
+			<a class="jcarousel-prev" href="#"><img class="arrow" src="{{ STATIC_URL }}images/left_arrow.png"></a>
+		    <div class="jcarousel">
+		    	<ul>
+			        <li><img src="{{ STATIC_URL }}images/photo1.jpg"></li>
+			        <li><img src="{{ STATIC_URL }}images/photo2.jpg"></li>
+			        <li><img src="{{ STATIC_URL }}images/photo3.jpg"></li>
+		        </ul>
+		    </div>
+		    <a class="jcarousel-next" href="#"><img class="arrow" src="{{ STATIC_URL }}images/right_arrow.png"></a>
 	    </div>
-	    <a class="jcarousel-next" href="#"><img class="arrow" src="{{ STATIC_URL }}images/right_arrow.png"></a>
 	    <br style="clear: left;" />
 	    <div class="jcarousel-pagination"></div>
+	    <!-- <div id="pagination">
+	    	<div class="jcarousel-pagination"></div>
+	    </div> -->
 	</div>
 </div>
 {% endblock %}
 
 {% block about %}
-<div id="about_container">
-	<div id="about_us">
+<div id="about">
+	<div class="narrower-container">
 	    <h1> About Us </h1>
 	    <p> KUSA is the Duke University Korean Student Organization. 
 	    KUSA is the Duke University Korean Student Organization. 
@@ -30,27 +35,96 @@
 	    KUSA is the Duke University Korean Student Organization. 
 	    </p>
 	</div>
+</div> 
+
 </div>
 {% endblock %}
 
 {% block exec %}
-<div id="exec_container">
-	<div id="exec">
+<div id="exec">
+	<div class="narrower-container">
 	    <h1> Exec Members </h1>
-	    <p> Here is a list of Exec members of KUSA!!
-	    Here is a list of Exec members of KUSA!!
-	    Here is a list of Exec members of KUSA!!
-	    Here is a list of Exec members of KUSA!!
-	    Here is a list of Exec members of KUSA!!
-	    Here is a list of Exec members of KUSA!!
-	    </p>
+	    <div id="exec-tabs">
+	    	<div class="tab">
+	    		<input type="radio" id="tab-1" name="tab-group-1" checked>
+	    		<label for="tab-1">Co-Presidents</label>
+	    		<div class="content" >
+		           <h3 style="display:block">Patrick Oh</h3>
+		           <p style="display:block">description</p>
+		           <h3 style="display:block">Jun Yoon</h3>
+		           <p style="display:block">description</p>
+		       </div> 
+	    	</div>
+	    	<div class="tab">
+	    		<input type="radio" id="tab-2" name="tab-group-1">
+	    		<label for="tab-2">Vice President</label>
+	    		<div class="content">
+		           <h3>Sooryun Park</h3>
+		           <p>description</p>
+		       </div> 
+	    	</div>
+	    	<div class="tab">
+	    		<input type="radio" id="tab-3" name="tab-group-1">
+	    		<label for="tab-3">VP Academic</label>
+	    		<div class="content">
+		           <h3>YJ Yang</h3>
+		           <p>description</p>
+		           <h3>Bryan Kim</h3>
+		           <p>description</p>
+		       </div> 
+	    	</div>
+	    	<div class="tab">
+	    		<input type="radio" id="tab-4" name="tab-group-1">
+	    		<label for="tab-4">VP Cultural</label>
+	    		<div class="content">
+		           <h3>Alison Choi</h3>
+		           <p>description</p>	
+		       </div> 
+	    	</div>
+	    	<div class="tab">
+	    		<input type="radio" id="tab-5" name="tab-group-1">
+	    		<label for="tab-5">VP Publicity</label>
+	    		<div class="content">
+		           <h3>Minkwon Lee</h3>
+		           <p>description</p>
+		           <h3>Diane Kim</h3>
+		           <p>description</p>
+		       </div> 
+	    	</div>
+	    	<div class="tab">
+	    		<input type="radio" id="tab-6" name="tab-group-1">
+	    		<label for="tab-6">VP Social</label>
+	    		<div class="content">
+		           <h3>Brian Koh</h3>
+		           <p>description</p>
+		           <h3>Julie Kim</h3>
+		           <p>description</p>
+		       </div> 
+	    	</div>
+	    	<div class="tab">
+	    		<input type="radio" id="tab-7" name="tab-group-1">
+	    		<label for="tab-7">Treasurer</label>
+	    		<div class="content">
+		           <h3>Paul Kim</h3>
+		           <p>description</p>
+		       </div> 
+	    	</div>
+	    	<div class="tab">
+	    		<input type="radio" id="tab-8" name="tab-group-1">
+	    		<label for="tab-8">Webmaster</label>
+	    		<div class="content">
+		           <h3>Alex Song</h3>
+		           <p>description</p>
+		       </div> 
+	    	</div>
+	    </div>
 	</div>
 </div>
 {% endblock %}
 
 {% block photo %}
-<div id="photo_container">
-	<div id="photos">
+<div id="photos">
+	<div class="narrower-container">
 	    <h1> Photos </h1>
 	    <p> Here is a list of photos/vides and other goodies of KUSA!!
 	    Here is a list of photos/vides and other goodies of KUSA!!
@@ -60,6 +134,38 @@
 	    Here is a list of photos/vides and other goodies of KUSA!!
 	    Here is a list of photos/vides and other goodies of KUSA!!
 	    </p>
+	</div>
+</div>
+{% endblock %}
+
+{% block calendar %}
+<div id="calendar">
+	<div class="narrower-container">
+		<h1> Calendar </h1>
+		<iframe src="https://www.google.com/calendar/embed?title=KUSA%20Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=kusa.dukeu%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	</div>
+</div>
+{% endblock %}
+
+{% block contact %}
+<div id="contact">
+	<div class="narrower-container">
+		<h1>Contact Form</h1>
+		<p>To send us a message fill out the below form.</p>
+	    {% if errors %}
+	        <ul>
+	            {% for error in errors %}
+	            <li>{{ error }}</li>
+	            {% endfor %}
+	        </ul>
+	    {% endif %}
+		  
+	    <form action="/contact/" method="post">{% csrf_token %}
+	        <p>Subject: <input type="text" name="subject"></p>
+	        <p>Your e-mail: <input type="text" name="email"></p>
+	        <p>Message: <textarea name="message" rows="10" cols="50"></textarea></p>
+	        <input type="submit" value="Submit">
+	    </form>
 	    <div id="toTop"><button>top</button></div>
 	</div>
 </div>

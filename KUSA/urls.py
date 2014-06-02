@@ -16,4 +16,8 @@ urlpatterns = patterns('',
     #different languages
     url(r'^eng/?$', 'KUSAapp.views.engHomepage'),
     url(r'^kor/?$', 'KUSAapp.views.korHomepage'),
+    
+    # contact form
+    url(r'^contact/?$', 'KUSAapp.views.contact', name='contact'),
+    url(r'^thanks/?$', '.KUSAapp.views.thanks', name='thanks'),
 )

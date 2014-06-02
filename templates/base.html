@@ -1,42 +1,53 @@
 <html>
 	<head>
-		<title>Duke KUSA</title>        
+		<title>Duke KUSA</title>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" />        
         <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/jcarousel.js"></script>
-        <script type="text/javascript" src="{{ STATIC_URL }}js/script.js"></script>
-        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" />
-
+        <script type="text/javascript" src="{{ STATIC_URL }}js/Stellar.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/script.js"></script>        
 	</head>
 
 	<body>
 		<div id="container">
-			<div id="topbar"> <!--top bar with description and email-->
-				<div id="main_container">
-					<div id="desc"><p>description? overly long descripty description</p></div>
-					<div id="email"><p>kusa@duke.edu</p></div>
+			<!-- top bar/logo/nav -->
+			<div id="header">
+				<!--top bar with description and email-->
+				<!-- <div id="topbar">
+					<div class="narrower-container">
+						<div id="desc"><p>description? overly long descripty description</p></div>
+						<div id="email"><p>kusa@duke.edu</p></div>
+					</div>
+				</div> -->				
+				<!--space for kusa logo-->
+				<div id="logo">
+					<div class="narrower-container"> 
+						<img src="{{ STATIC_URL }}images/KUSA_logo.jpg" alt="kusa logo">
+					</div>
 				</div>
+				<!--nav bar for different pages-->
+				<div id="nav"> 
+					<div class="narrower-container">
+						<ul id="nav-list">
+							<li><a href="#about">about us</a></li>
+							<li><a href="#exec">exec board</a></li>
+							<li><a href="#photos">photos</a></li>
+							<li><a href="#calendar">calendar</a></li>
+							<li><a href="#contact">contact</a></li>
+						</ul>
+					</div>
+				</div>			
 			</div>
-			<div id="logo"> <!--space for kusa logo-->
-				<img src="{{ STATIC_URL }}images/KUSA_logo.jpg" alt="kusa logo">
+
+			<!--carousel/about/exec/photo/calendar/contact-->
+			<div id="maininfo">
+				{% block carousel %}{% endblock %}
+				{% block about %}{% endblock %}
+				{% block exec %}{% endblock %}
+				{% block photo %}{% endblock %}
+				{% block calendar %}{% endblock %}
+				{% block contact %}{% endblock %}
 			</div>
-			<hr id="hor_divider">
-			<div id="main_container">
-				<div id="nav"> <!--nav bar for different pages-->
-					<ul id="nav_list">
-						<li><a href="#about_container">about us</a></li>
-						<li><a href="#exec_container">exec board</a></li>
-						<li><a href="#photo_container">photos</a></li>
-						<li><a href="#">calendar</a></li>
-						<li><a href="#">contact</a></li>
-					</ul>
-				</div>
-			</div>
-			{% block main %}{% endblock %}
-			{% block about %}{% endblock %}
-			{% block exec %}{% endblock %}
-			{% block photo %}{% endblock %}
-			{% block calendar %}{% endblock %}
-			{% block contact %}{% endblock %}
 		</div>
 	</body>
 </html>
