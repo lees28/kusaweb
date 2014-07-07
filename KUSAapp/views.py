@@ -3,6 +3,7 @@ from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.shortcuts import render_to_response
+import json
 
 # Create your views here.
 # load homepage
@@ -10,7 +11,10 @@ def homepage(request):
     return render(request, 'index.html')
 
 def engHomepage(request):
-    return render(request, 'english.html')
+    with open("templates/exec.json") as json_file:
+        execs = json.load(json_file)
+        return render(request, 'english.html', {"execs":execs})
+    
 
 def korHomepage(request):
     return render(request, 'korean.html')

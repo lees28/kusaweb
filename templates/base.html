@@ -1,8 +1,10 @@
 <html>
 	<head>
 		<title>Duke KUSA</title>
-        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" />        
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" />                
         <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/jcarousel.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/Stellar.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/script.js"></script>        
@@ -36,7 +38,7 @@
 							<li><a href="#contact">contact</a></li>
 						</ul>
 					</div>
-				</div>			
+				</div>
 			</div>
 
 			<!--carousel/about/exec/photo/calendar/contact-->
@@ -47,6 +49,13 @@
 				{% block photo %}{% endblock %}
 				{% block calendar %}{% endblock %}
 				{% block contact %}{% endblock %}
+			</div>
+			<div id="footer">
+				<div class="narrower-container">
+					<div id="footer-desc">
+						Copyright Duke Korean Undergraduate Student Association 2014
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

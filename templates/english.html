@@ -44,7 +44,74 @@
 <div id="exec">
 	<div class="narrower-container">
 	    <h1> Exec Members </h1>
-	    <div id="exec-tabs">
+	    <!-- Nav tabs -->
+		<ul class="nav nav-tabs" id="exec-tab" role="tablist">
+			<!--President First-->
+			{% for position, members in execs.iteritems %}
+				{% if position == 'Co-Presidents' %}
+					<li class="active"><a href="#{{position}}" role="tab" data-toggle="tab">{{position}}</a></li>	
+				{% endif %}
+			{% endfor %}
+			<!--Then Vice President-->
+			{% for position, members in execs.iteritems %}
+				{% if position == 'Vice-President' %}
+					<li><a href="#{{position}}" role="tab" data-toggle="tab">{{position}}</a></li>	
+				{% endif %}
+			{% endfor %}
+			<!--Then the rest-->
+			{% for position, members in execs.iteritems %}
+				{% if position != 'Co-Presidents' and position != 'Vice-President'%}
+					{% if position != 'Treasurer' and position != 'Webmaster' %}
+						<li><a href="#{{position}}" role="tab" data-toggle="tab">{{position}}</a></li>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+			{% for position, members in execs.iteritems %}
+				{% if position == 'Treasurer' or position == 'Webmaster'%}
+					<li><a href="#{{position}}" role="tab" data-toggle="tab">{{position}}</a></li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content" id="exec-content">
+		{% for position, members in execs.iteritems %}
+			{% if position == 'Co-Presidents' %}
+				<div class="tab-pane fade in active" id="{{position}}">
+			{% else %}
+				<div class="tab-pane fade" id="{{position}}">
+			{% endif %}
+				<br>
+				{% for member in members %}
+					<table>
+						<tr>
+							<td>Name: </td>
+							<td>{{member.Name}}</td>
+						</tr>
+						<tr>
+							<td>Class: </td>
+							<td>{{member.Class}}</td>
+						</tr>
+						<tr>
+							<td>Major: </td>
+							<td>
+								{% for m in member.Major %}
+									{{m}} &
+								{% endfor %}
+							</td>
+						</tr>
+						<tr>
+							<td>Hometown: </td>
+							<td>{{member.Hometown}}</td>
+						</tr>
+					</table>
+					<br>
+				{% endfor %}
+				</div>
+		{% endfor %}
+		</div>
+		
+	    <!-- <div id="exec-tabs">
 	    	<div class="tab">
 	    		<input type="radio" id="tab-1" name="tab-group-1" checked>
 	    		<label for="tab-1">Co-Presidents</label>
@@ -117,7 +184,7 @@
 		           <p>description</p>
 		       </div> 
 	    	</div>
-	    </div>
+	    </div> -->
 	</div>
 </div>
 {% endblock %}
