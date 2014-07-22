@@ -1,0 +1,102 @@
+{
+	"Co-Presidents": [
+		{
+			"Name": "Patrick Oh",
+			"Class": 2015,
+			"Major": ["Biology", "International Comparative Studies"],
+			"Hometown": "Poughkeepsie, NY",
+			"Description": "yay Patrick hi hi!"
+		},
+		{
+			"Name": "Jun Yoon",
+			"Major": ["Economics", "Statistics"],
+			"Class": 2015,
+			"Hometown": "Seoul, South Korea",
+			"Description": "Yo This is JUNNN"
+		}
+	],
+	"Vice-President": [
+		{
+			"Name": "Sooryun Park",
+			"Major": ["Economics", "International Comparative Studies"],
+			"Class": 2015,
+			"Hometown": "Suncheon, South Korea",
+			"Description": ""
+		}
+	],
+	"VP-Academic": [
+		{
+			"Name": "YJ Yang",
+			"Class": 2016,
+			"Major": ["Computer Science", "Math"],
+			"Hometown": "Seoul, South Korea",
+			"Description": ""
+		},
+		{
+			"Name": "Bryan Kim",
+			"Major": ["Public Policy"],
+			"Class": 2015,
+			"Hometown": "Durham, NC",
+			"Description": ""
+		}
+	],
+	"VP-Cultural": [
+		{
+			"Name": "Alison Choi",
+			"Major": ["Biology"],
+			"Class": 2016,
+			"Hometown": "Tampa, FL",
+			"Description": ""
+		}
+	],
+	"VP-Publicity": [
+		{
+			"Name": "Minkwon Lee",
+			"Major": ["Computer Science", "Economics"],
+			"Class": 2015,
+			"Hometown": "Columbus, GA",
+			"Description": ""
+		},
+		{
+			"Name": "Diane Kim",
+			"Major": ["Biomedical Engineering"],
+			"Class": 2017,
+			"Hometown": "Suwon, South Korea",
+			"Description": ""
+		}
+	],
+	"VP-Social": [
+		{
+			"Name": "Brian Koh",
+			"Major": ["Economics"],
+			"Class": 2016,
+			"Hometown": "Ilsan, South Korea",
+			"Description": ""
+		},
+		{
+			"Name": "Julie Kim",
+			"Major": ["Chemistry"],
+			"Class": 2016,
+			"Hometown": "Monterey, CA",
+			"Description": ""
+		}
+	],
+	"Treasurer": [
+		{
+			"Name": "Paul Kim",
+			"Major": ["Electrical Engineering", "Economics"],
+			"Class": 2015,
+			"Hometown": "Vancouver, Canada",
+			"Description": ""
+		}
+	],
+	"Webmaster": [
+		{
+			"Name": "Alex Song",
+			"Major": ["Computer Science"],
+			"Class": 2015,
+			"Hometown": "Vancouver, Canada",
+			"Description": ""
+		}
+	]
+}
