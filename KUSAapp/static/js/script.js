@@ -49,6 +49,15 @@ $(document).ready(function() {
 	    $(this).attr('src', '/static/images/dot.png');
 	});
 
+    // lightbox for about page
+    $(".fancybox").fancybox({
+	    width: 750,
+	    height: 200,
+	    fitToView : false,
+   		autoSize : false
+	});
+
+    // exec tabs
 	$('#exec-tab a').click(function (e) {
 		e.preventDefault()
 		$(this).tab('show')
