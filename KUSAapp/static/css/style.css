@@ -5,11 +5,18 @@
 /* Heading formatting */
 body {
 	margin: 0;
-	font-family: arial;
+	font-family: 'Lato', sans-serif;
 }
 
 /* Text formatting */
-
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+p {
+	font-size:25px;
+}
 /* Form formatting */
 
 /* Table formatting */
@@ -115,7 +122,6 @@ body {
     width:	  90%;
     margin:	  0 auto;
     border:   10px solid grey;
-    float:	  left;
 }
 .jcarousel ul {
     width: 	  20000em;
@@ -166,8 +172,11 @@ body {
 }
 #about h1 {
 	text-align:  left;
-	margin: 	 0 auto;
 	padding-top: 30px;
+}
+#about p {
+	text-align: left;
+	font-size: 24px;
 }
 #about .about-sub-section {
 	margin:0 auto;
@@ -190,6 +199,12 @@ body {
 	text-decoration: none;
 }
 
+.fancybox-title-over-wrap {
+    width: 100%;
+    opacity: 0.7;
+    padding: 5px;
+}
+
 
 #exec {
 	/*background-color: #65879C;*/
@@ -204,6 +219,10 @@ body {
 #exec p {
 	margin: 0 auto;
 }
+#exec img {
+	width:96px; 
+	height:128px;
+}
 #exec-tabs {
   	position:   relative;   
 	min-height: 300px; /* This part sucks */
@@ -215,8 +234,12 @@ body {
 }
 #exec-content table {
 	margin-left:20px;
+	margin-bottom:30px;
 }
 #exec-content table td {
+	padding-left:20px;
+}
+#exec-content table th {
 	padding-left:20px;
 }
 #photos {
@@ -252,7 +275,7 @@ body {
 
 #contact {
 	background-color:#FFFFFF;
-	height: 500px;
+	height: 550px;
 	border-top: 1px solid #D9E0FF;
 	margin: 0 auto;	
 }
@@ -263,9 +286,13 @@ body {
 }
 #contact p {
 	text-align: left;
-}
 
+}
+form p {
+	font-size:15px;
+}
 #toTop {
+	margin-top:30px;
 	height: 20px;
 	width: 20px;
 	float:right;

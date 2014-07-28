@@ -51,10 +51,20 @@ $(document).ready(function() {
 
     // lightbox for about page
     $(".fancybox").fancybox({
-	    width: 750,
-	    height: 200,
+	    height: 350,
+    	width: 650,
 	    fitToView : false,
-   		autoSize : false
+   		autoSize : false,
+   		helpers : {
+	        overlay : {
+	            css : {
+	                'background' : 'rgba(58, 42, 45, 0.5)'
+	            }
+	        },
+	        title: {
+	            type : 'over'
+	        }
+	    }
 	});
 
     // exec tabs
