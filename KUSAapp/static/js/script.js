@@ -20,7 +20,7 @@ $(document).ready(function() {
 		wrap: 'both'
 	}); 
 	carousel.jcarouselAutoscroll({
-            interval: 3000,
+            interval: 10000,
             target: '+=1',
             autostart: true,
     });

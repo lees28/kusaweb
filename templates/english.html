@@ -94,26 +94,26 @@
 			<!--President First-->
 			{% for position, members in execs.iteritems %}
 				{% if position == 'Co-Presidents' %}
-					<li class="active"><a href="#{{position}}" role="tab" data-toggle="tab">{{position}}</a></li>	
+					<li class="active"><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>	
 				{% endif %}
 			{% endfor %}
 			<!--Then Vice President-->
 			{% for position, members in execs.iteritems %}
 				{% if position == 'Vice-President' %}
-					<li><a href="#{{position}}" role="tab" data-toggle="tab">{{position}}</a></li>	
+					<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>	
 				{% endif %}
 			{% endfor %}
 			<!--Then the rest-->
 			{% for position, members in execs.iteritems %}
 				{% if position != 'Co-Presidents' and position != 'Vice-President'%}
 					{% if position != 'Treasurer' and position != 'Webmaster' %}
-						<li><a href="#{{position}}" role="tab" data-toggle="tab">{{position}}</a></li>
+						<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
 					{% endif %}
 				{% endif %}
 			{% endfor %}
 			{% for position, members in execs.iteritems %}
 				{% if position == 'Treasurer' or position == 'Webmaster'%}
-					<li><a href="#{{position}}" role="tab" data-toggle="tab">{{position}}</a></li>
+					<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
 				{% endif %}
 			{% endfor %}
 		</ul>
