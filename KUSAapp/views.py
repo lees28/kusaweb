@@ -34,6 +34,7 @@ def contact(request):
                 request.POST['message'],
                 request.POST.get('email', 'noreply@simplesite.com'),
                 ['alexsong93@gmail.com'], #email address where message is sent.
+                fail_silently=False
             )
             return HttpResponseRedirect('/eng/')
     return render(request, 'english.html',
