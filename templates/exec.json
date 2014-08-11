@@ -5,14 +5,16 @@
 			"Class": 2015,
 			"Major": ["Biology", "International Comparative Studies"],
 			"Hometown": "Poughkeepsie, NY",
-			"Photo": "/static/photos/patrick.jpg"
+			"Photo": "/static/photos/patrick.jpg",
+			"Email": "po14@duke.edu"
 		},
 		{
 			"Name": "Jun Yoon",
 			"Major": ["Economics", "Statistics"],
 			"Class": 2015,
 			"Hometown": "Seoul, South Korea",
-			"Photo": "/static/photos/jun.jpg"
+			"Photo": "/static/photos/jun.jpg",
+			"Email": "jun.yoon77@gmail.com"
 		}
 	],
 	"Vice-President": [
@@ -21,7 +23,8 @@
 			"Major": ["Economics", "International Comparative Studies"],
 			"Class": 2015,
 			"Hometown": "Suncheon, South Korea",
-			"Photo": "/static/photos/sooryun.jpg"
+			"Photo": "/static/photos/sooryun.jpg",
+			"Email": ""
 		}
 	],
 	"VP-Academic": [
@@ -30,14 +33,16 @@
 			"Class": 2016,
 			"Major": ["Computer Science", "Math"],
 			"Hometown": "Seoul, South Korea",
-			"Photo": "/static/photos/YJ.png"
+			"Photo": "/static/photos/YJ.png",
+			"Email": ""
 		},
 		{
 			"Name": "Bryan Kim",
 			"Major": ["Public Policy"],
 			"Class": 2015,
 			"Hometown": "Durham, NC",
-			"Photo": "/static/photos/bryan.jpg"
+			"Photo": "/static/photos/bryan.jpg",
+			"Email": "bryan.h.kim@duke.edu"
 		}
 	],
 	"VP-Cultural": [
@@ -46,7 +51,8 @@
 			"Major": ["Biology"],
 			"Class": 2016,
 			"Hometown": "Tampa, FL",
-			"Photo": "/static/photos/alison.jpg"
+			"Photo": "/static/photos/alison.jpg",
+			"Email": "achoi94@gmail.com"
 		}
 	],
 	"VP-Publicity": [
@@ -55,14 +61,16 @@
 			"Major": ["Computer Science", "Economics"],
 			"Class": 2015,
 			"Hometown": "Columbus, GA",
-			"Photo": "/static/photos/minkwon.jpg"
+			"Photo": "/static/photos/minkwon.jpg",
+			"Email": ""
 		},
 		{
 			"Name": "Diane Kim",
 			"Major": ["Biomedical Engineering"],
 			"Class": 2017,
 			"Hometown": "Suwon, South Korea",
-			"Photo": "/static/photos/diane.jpg"
+			"Photo": "/static/photos/diane.jpg",
+			"Email": ""
 		}
 	],
 	"VP-Social": [
@@ -71,14 +79,16 @@
 			"Major": ["Economics"],
 			"Class": 2016,
 			"Hometown": "Ilsan, South Korea",
-			"Photo": ""
+			"Photo": "",
+			"Email": ""
 		},
 		{
 			"Name": "Julie Kim",
 			"Major": ["Chemistry"],
 			"Class": 2016,
 			"Hometown": "Monterey, CA",
-			"Photo": "/static/photos/julie.png"
+			"Photo": "/static/photos/julie.png",
+			"Email": "sk310@duke.edu"
 		}
 	],
 	"Treasurer": [
@@ -87,7 +97,8 @@
 			"Major": ["Electrical Engineering", "Economics"],
 			"Class": 2015,
 			"Hometown": "Vancouver, Canada",
-			"Photo": "/static/photos/paul.png"
+			"Photo": "/static/photos/paul.png",
+			"Email": ""
 		}
 	],
 	"Webmaster": [
@@ -96,7 +107,8 @@
 			"Major": ["Computer Science"],
 			"Class": 2015,
 			"Hometown": "Vancouver, Canada",
-			"Photo": ""
+			"Photo": "",
+			"Email": "ss456@duke.edu"
 		}
 	]
 }

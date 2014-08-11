@@ -2,14 +2,23 @@
 
 {% block carousel %}
 <div id="carousel" data-stellar-background-ratio="1" data-stellar-horizontal-offset="1000">
-	<div class="narrower-container">
+	<!-- <div class="narrower-container"> -->
 		<div id="carousel-and-nav">
 			<!-- <a class="jcarousel-prev" href="#"><img class="arrow" src="{{ STATIC_URL }}images/left_arrow.png"></a> -->
 		    <div class="jcarousel">
 		    	<ul>
-			        <li><img src="{{ STATIC_URL }}images/photo1.jpg"></li>
-			        <li><img src="{{ STATIC_URL }}images/photo2.jpg"></li>
-			        <li><img src="{{ STATIC_URL }}images/photo3.jpg"></li>
+			        <li>
+			        	<img src="{{ STATIC_URL }}images/photo1.jpg">
+			        	<p id="explore">explore</p>
+			        </li>
+			        <li>
+			        	<img src="{{ STATIC_URL }}images/photo2.jpg">
+			        	<p id="learn">learn</p>
+			        </li>
+			        <li>
+			        	<img src="{{ STATIC_URL }}images/photo3.jpg">
+			        	<p id="network">network</p>
+			        </li>
 		        </ul>
 		    </div>
 		    <!-- <a class="jcarousel-next" href="#"><img class="arrow" src="{{ STATIC_URL }}images/right_arrow.png"></a> -->
@@ -19,7 +28,7 @@
 	    <!-- <div id="pagination">
 	    	<div class="jcarousel-pagination"></div>
 	    </div> -->
-	</div>
+	<!-- </div> -->
 </div>
 {% endblock %}
 
@@ -28,7 +37,7 @@
 	<div class="narrower-container">
 	    <h1> About Us </h1>
 	    <p>Click on the photos below to learn more about what KUSA has to offer!</p>
-	    <div class="about-sub-section">
+	    <!-- <div class="about-sub-section">
 		    <a class="fancybox" id="300" rel="group" href="#mission-desc" title="Mission Statement">
 		    	<div class="about-sub-title">
 		    		<p>Mission Statement</p>
@@ -49,7 +58,7 @@
 		    		<p>Social Activities</p>
 		    	</div>		
 		    </a>
-	    </div>
+	    </div> -->
 	</div>
 
 	<div style="display:none">
@@ -130,7 +139,7 @@
 				{% for member in members %}
 					<table>
 						<tr>
-							<td rowspan="4"><img src="{{member.Photo}}" /></td>
+							<td rowspan="5"><img src="{{member.Photo}}" /></td>
 							<th>Name: </th>
 							<td>{{member.Name}}</td>
 						</tr>
@@ -142,13 +151,20 @@
 							<th>Major: </th>
 							<td>
 								{% for m in member.Major %}
-									{{m}} &
+									{{m}} 
+									{% if not forloop.last %}
+										&
+									{% endif %}
 								{% endfor %}
 							</td>
 						</tr>
 						<tr>
 							<th>Hometown: </th>
 							<td>{{member.Hometown}}</td>
+						</tr>
+						<tr>
+							<th>Email:</th>
+							<td>{{member.Email}}</td>
 						</tr>
 					</table>
 				{% endfor %}
@@ -163,14 +179,72 @@
 <div id="photos">
 	<div class="narrower-container">
 	    <h1> Photos </h1>
-	    <p> Here is a list of photos/vides and other goodies of KUSA!!
-	    Here is a list of photos/vides and other goodies of KUSA!!
-	    Here is a list of photos/vides and other goodies of KUSA!!
-	    Here is a list of photos/vides and other goodies of KUSA!!
-	    Here is a list of photos/vides and other goodies of KUSA!!
-	    Here is a list of photos/vides and other goodies of KUSA!!
-	    Here is a list of photos/vides and other goodies of KUSA!!
-	    </p>
+	    <p>Click on the photos below to learn more about what KUSA has to offer!</p>
+	    <div class="about-sub-section">
+		    <a class="fancybox" id="300" rel="group" href="#SNL" title="SNL">
+		    	<div class="photos-sub-title">
+		    		<img src="" >
+		    		<h4>Korea Night - SNL</h4>
+		    	</div>		    	
+		    </a>
+		    <a class="fancybox" id="300" rel="group" href="#BBQ" title="BBQ">
+		    	<div class="photos-sub-title">
+		    		<img src="" >
+		    		<h4>Chuseok Festival BBQ</h4>
+		    	</div>		    	
+		    </a>
+		    <!-- <a class="fancybox" id="300" rel="group" href="#mission-desc" title="Mission Statement">
+		    	<div class="photos-sub-title">
+		    		<img src="" >
+		    		<h4>LNY 2014</h4>
+		    	</div>		    	
+		    </a>
+		    <a class="fancybox" id="300" rel="group" href="#mission-desc" title="Mission Statement">
+		    	<div class="photos-sub-title">
+		    		<img src="" >
+		    		<h4>LNY 2014</h4>
+		    	</div>		    	
+		    </a>
+		     <a class="fancybox" id="300" rel="group" href="#mission-desc" title="Mission Statement">
+		    	<div class="photos-sub-title">
+		    		<img src="" >
+		    		<h4>LNY 2014</h4>
+		    	</div>		    	
+		    </a> -->
+	    </div>
+	</div>
+	<div style="margin-left:-9999px">
+		<div id="SNL"> 
+			<div class="gallery" id="snl">				
+				<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1456695_542649682485561_1759024476_n.jpg?oh=d90ae768abd4fd2ed2ff782225640887&oe=546B11EA&__gda__=1416513349_7bbad8df324d92543704e9105771b1ed">
+				<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xfp1/t1.0-9/1468794_542649599152236_648908827_n.jpg">
+				<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/1470315_542649772485552_1378419564_n.jpg">
+				<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/1471883_542650079152188_1531925360_n.jpg">
+				<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/734171_542650715818791_651123690_n.jpg?oh=353ea8868b0300b4480eea01b75f9cb0&oe=5481B54A&__gda__=1417409523_3f8cf461f76793e421f30315c1f4cd27">
+				<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/1396055_542651589152037_245931603_n.jpg">
+				<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/545985_542651722485357_1773303613_n.jpg">
+				<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-prn2/t1.0-9/1425648_542651909152005_1905098223_n.jpg">
+				<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xpf1/t1.0-9/1466157_542652165818646_500562654_n.jpg">
+				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xap1/t1.0-9/1463964_542653075818555_107361965_n.jpg">
+				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/539720_542653535818509_1645138556_n.jpg?oh=4cb0dd6fb167567a47c1ede7cd9afb98&oe=5460817D">
+				<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn2/t1.0-9/558619_542653975818465_315431770_n.jpg">
+				<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn2/t1.0-9/1460082_542654559151740_696946073_n.jpg">
+				<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1461204_542654769151719_613210277_n.jpg?oh=307cc8cf20eeb0f8105311fe6f633e4b&oe=54626C2F">
+			</div>
+		</div>
+	</div>
+	<div style="margin-left:-9999px">
+		<div id="BBQ">
+			<div class="gallery" id="gallery2">
+				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xap1/t1.0-9/1239661_516208171796379_850692583_n.jpg">
+				<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-frc3/t1.0-9/1233493_516208175129712_1593840193_n.jpg">
+				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xpa1/t1.0-9/563585_516208168463046_1545374843_n.jpg">
+				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/p417x417/734386_516208268463036_443641389_n.jpg?oh=99c0d00289f6be39daf4b8d63d33efb5&oe=546BF19F">
+				<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/p417x417/1238923_516209258462937_367274963_n.jpg?oh=b8d27a5f1cc3a69449564e4469ee2182&oe=546CF751&__gda__=1417417149_50a2c11b99e12d9979f873ae58c91e2e">
+				<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/v/t1.0-9/p417x417/1236318_516209311796265_1024590172_n.jpg?oh=abed357634a9e331d3e00eca3cc54b8d&oe=547D2908&__gda__=1416507160_092062362e30bafa96b86ad0dafe4822">
+				<img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/p417x417/579058_516209361796260_1135421937_n.jpg">
+			</div>
+		</div>
 	</div>
 </div>
 {% endblock %}

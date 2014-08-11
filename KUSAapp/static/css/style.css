@@ -45,6 +45,7 @@ p {
 /* Header */
 #header {
 	height:300px;
+	background-image:url("../images/halftone.png");
 }
 
 #topbar {
@@ -122,9 +123,9 @@ p {
 .jcarousel {
     position: relative;
     overflow: hidden;
-    width:	  90%;
+    width:	  80%;
     margin:	  0 auto;
-    border:   10px solid grey;
+    border:   5px solid grey;
 }
 .jcarousel ul {
     width: 	  20000em;
@@ -139,6 +140,30 @@ p {
     /* Required only for block elements like <li>'s */
     float: left;
 }
+.jcarousel img {
+	width:950px;
+	height:470px;
+}
+.jcarousel p {
+	position: absolute;
+	color:white;
+	opacity:0.8;
+	font-size: 140px;
+	top:280px;
+}
+#explore {
+	left:460px;
+}
+#learn {
+	left:1540px;
+}
+#network {
+	left:2300px;
+}
+.jcarousel img:hover {
+
+}
+
 #pagination {
 	height: 40px;
 	width:  100%;
@@ -258,6 +283,25 @@ p {
 }
 #photos p {
 	text-align: left;
+}
+#photos .photos-sub-title {
+	margin:20px;
+	display:inline-block;
+}
+#photos .photos-sub-title img {
+	width:150px; 
+	height:150px; 
+}
+#photos a {
+	text-decoration: none;
+}
+
+.gallery { 
+	width: 800px;
+	height: 450px;
+	background: #000;
+	clear:both;
+	margin:auto;
 }
 
 #calendar {

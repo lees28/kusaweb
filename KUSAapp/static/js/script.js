@@ -20,7 +20,7 @@ $(document).ready(function() {
 		wrap: 'both'
 	}); 
 	carousel.jcarouselAutoscroll({
-            interval: 10000,
+            interval: 6000,
             target: '+=1',
             autostart: true,
     });
@@ -50,22 +50,41 @@ $(document).ready(function() {
 	});
 
     // lightbox for about page
-    $(".fancybox").fancybox({
-	    height: 350,
-    	width: 650,
-	    fitToView : false,
-   		autoSize : false,
-   		helpers : {
+ //    $(".fancybox").fancybox({
+	//     height: 350,
+ //    	width: 650,
+	//     fitToView : false,
+ //   		autoSize : false,
+ //   		helpers : {
+	//         overlay : {
+	//             css : {
+	//                 'background' : 'rgba(58, 42, 45, 0.5)'
+	//             }
+	//         },
+	//         title: {
+	//             type : 'over'
+	//         }
+	//     }
+	// });
+	$(".fancybox").fancybox({
+		arrows: false,
+		helpers : {
 	        overlay : {
 	            css : {
 	                'background' : 'rgba(58, 42, 45, 0.5)'
 	            }
 	        },
-	        title: {
-	            type : 'over'
-	        }
+	        title : null
 	    }
 	});
+	
+	Galleria.loadTheme('/static/galleria/themes/classic/galleria.classic.min.js');
+	$(".fancybox").click(function() {
+		var title = "#" + $(this).attr('title')
+		var gallery = "#" + $(title).children().first().attr('id');
+		Galleria.run(gallery);	
+	})
+	
 
     // exec tabs
 	$('#exec-tab a').click(function (e) {
