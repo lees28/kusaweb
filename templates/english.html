@@ -17,18 +17,18 @@
 			        </li>
 			        <li>
 			        	<img src="{{ STATIC_URL }}images/photo3.jpg">
-			        	<p id="network">network</p>
+			        	<p id="mingle">mingle</p>
 			        </li>
 		        </ul>
 		    </div>
 		    <!-- <a class="jcarousel-next" href="#"><img class="arrow" src="{{ STATIC_URL }}images/right_arrow.png"></a> -->
-	    </div>
+	    <!-- </div> -->
 	    <br style="clear: left;" />
 	    <!-- <div class="jcarousel-pagination"></div> -->
 	    <!-- <div id="pagination">
 	    	<div class="jcarousel-pagination"></div>
 	    </div> -->
-	<!-- </div> -->
+	</div>
 </div>
 {% endblock %}
 
@@ -36,63 +36,41 @@
 <div id="about">
 	<div class="narrower-container">
 	    <h1> About Us </h1>
-	    <p>Click on the photos below to learn more about what KUSA has to offer!</p>
-	    <!-- <div class="about-sub-section">
-		    <a class="fancybox" id="300" rel="group" href="#mission-desc" title="Mission Statement">
-		    	<div class="about-sub-title">
-		    		<p>Mission Statement</p>
-		    	</div>		
-		    </a>
-		    <a class="fancybox" id="350" rel="group" href="#cultural-desc" title="Cultural Activities">
-		    	<div class="about-sub-title">
-		    		<p>Cultural Activities</p>
-		    	</div>		
-		    </a>
-		    <a class="fancybox" id="275" rel="group" href="#political-desc" title="Political Activities">
-		    	<div class="about-sub-title">
-		    		<p>Political Activities</p>
-		    	</div>		
-		    </a>
-		     <a class="fancybox" id="250" rel="group" href="#social-desc" title="Social Activities">
-		    	<div class="about-sub-title">
-		    		<p>Social Activities</p>
-		    	</div>		
-		    </a>
-	    </div> -->
-	</div>
-
-	<div style="display:none">
-		<div id="mission-desc" class="about-sub-desc">
-			<p>
-				Founded in 2002, the Korean Undergraduate Students Association (KUSA) exists to provide a sense of community for undergraduate students at Duke University who share a common interest in Korean culture. KUSA is dedicated to promoting the cultural, social, and political interests of the Korean community on campus through a variety of events. Furthermore, we seek to serve as a vehicle for encouraging friendship and mentorship by organizing social activities throughout the year.
-			</p>
+	    <div id="about-list">
+		    <ul class="nav nav-pills nav-stacked" id="about-tab" role="tablist">
+				<li class="active"><a href="#mission" role="tab" data-toggle="tab"><h5>Mission Statement</h5></a></li>	
+				<li><a href="#cultural" role="tab" data-toggle="tab"><h5>Cultural Activities</h5></a></li>
+				<li><a href="#political" role="tab" data-toggle="tab"><h5>Political Activities</h5></a></li>
+				<li><a href="#social" role="tab" data-toggle="tab"><h5>Social Activities</h5></a></li>
+			</ul>
 		</div>
-	</div>
-	<div style="display:none">
-		<div id="cultural-desc" class="about-sub-desc">
-			<p>
-				KUSA strives to promote awareness of Korean culture by collaborating with our Korean affiliated performance organizations. Duke students have opportunities to play traditional Korean percussion (samulnori), learn choreography to the latest K-Pop music, and harmonize with our singing groups, both acapella and rock. Additionally, we have an annual cultural showcase that allows students to display their talents as part of a group or individually on a grand stage. We also participate in university-sponsored events throughout the year that promote multicultural awareness and celebrate the diversity of the Duke community. 
-			</p>
-		</div>
-	</div>
-	<div style="display:none">
-		<div id="political-desc" class="about-sub-desc">
-			<p>
-				We organize various events that educate the rest of the Duke community about current issues relevant to Korean society as well as those that pertain to the identity of being Korean American. We seek to collaborate with academic departments and other student organizations throughout the year as a means of inviting guest speakers and encouraging open dialogue of Korean issues.  
-			</p>
-		</div>
-	</div>
-	<div style="display:none">
-		<div id="social-desc" class="about-sub-desc">
-			<p>
-				KUSA is committed to fostering good relationships that allow one to feel he or she belongs to a tight-knit family during their Duke experience. We organize many social activities such as off-campus excursions, sporting events, and of course Korean meals that will ease your homesickness. We also frequently collaborate with other cultural organizations that involve fierce competition for prizes and immeasurable glory, but more importantly fellowship that is fruitful and long-lasting.  
-			</p>
+		<div class="tab-content" id="about-content">
+			<div class="tab-pane fade in active" id="mission">
+				<p>
+					Founded in 2002, the Korean Undergraduate Students Association (KUSA) exists to provide a sense of community for undergraduate students at Duke University who share a common interest in Korean culture. KUSA is dedicated to promoting the cultural, social, and political interests of the Korean community on campus through a variety of events. Furthermore, we seek to serve as a vehicle for encouraging friendship and mentorship by organizing social activities throughout the year.
+				</p>
+			</div>
+			<div class="tab-pane fade" id="cultural">
+				<p>
+					KUSA strives to promote awareness of Korean culture by collaborating with our Korean affiliated performance organizations. Duke students have opportunities to play traditional Korean percussion (samulnori), learn choreography to the latest K-Pop music, and harmonize with our singing groups, both acapella and rock. Additionally, we have an annual cultural showcase that allows students to display their talents as part of a group or individually on a grand stage. We also participate in university-sponsored events throughout the year that promote multicultural awareness and celebrate the diversity of the Duke community. 
+				</p>
+			</div>
+			<div class="tab-pane fade" id="political">
+				<p>
+					We organize various events that educate the rest of the Duke community about current issues relevant to Korean society as well as those that pertain to the identity of being Korean American. We seek to collaborate with academic departments and other student organizations throughout the year as a means of inviting guest speakers and encouraging open dialogue of Korean issues.  
+				</p>
+			</div>
+			<div class="tab-pane fade" id="social">
+				<p>
+					KUSA is committed to fostering good relationships that allow one to feel he or she belongs to a tight-knit family during their Duke experience. We organize many social activities such as off-campus excursions, sporting events, and of course Korean meals that will ease your homesickness. We also frequently collaborate with other cultural organizations that involve fierce competition for prizes and immeasurable glory, but more importantly fellowship that is fruitful and long-lasting.  
+				</p>
+			</div>
 		</div>
 	</div>
 </div> 
 
-</div>
 {% endblock %}
+
 
 {% block exec %}
 <div id="exec">
@@ -179,41 +157,20 @@
 <div id="photos">
 	<div class="narrower-container">
 	    <h1> Photos </h1>
-	    <p>Click on the photos below to learn more about what KUSA has to offer!</p>
-	    <div class="about-sub-section">
-		    <a class="fancybox" id="300" rel="group" href="#SNL" title="SNL">
-		    	<div class="photos-sub-title">
-		    		<img src="" >
-		    		<h4>Korea Night - SNL</h4>
-		    	</div>		    	
-		    </a>
-		    <a class="fancybox" id="300" rel="group" href="#BBQ" title="BBQ">
-		    	<div class="photos-sub-title">
-		    		<img src="" >
-		    		<h4>Chuseok Festival BBQ</h4>
-		    	</div>		    	
-		    </a>
-		    <!-- <a class="fancybox" id="300" rel="group" href="#mission-desc" title="Mission Statement">
-		    	<div class="photos-sub-title">
-		    		<img src="" >
-		    		<h4>LNY 2014</h4>
-		    	</div>		    	
-		    </a>
-		    <a class="fancybox" id="300" rel="group" href="#mission-desc" title="Mission Statement">
-		    	<div class="photos-sub-title">
-		    		<img src="" >
-		    		<h4>LNY 2014</h4>
-		    	</div>		    	
-		    </a>
-		     <a class="fancybox" id="300" rel="group" href="#mission-desc" title="Mission Statement">
-		    	<div class="photos-sub-title">
-		    		<img src="" >
-		    		<h4>LNY 2014</h4>
-		    	</div>		    	
-		    </a> -->
-	    </div>
+	    <a class="fancybox" id="300" rel="group" href="#SNL" title="SNL">
+	    	<div class="photos-sub-title">
+	    		<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1390719_535952546488608_256787894_n.jpg?oh=e2e97980ac8fedf13434c3b067d95878&oe=545B12F3&__gda__=1416882450_dca330f6acfed00ce4b86ae7380621e9" >
+	    		<h4>Korea Night - SNL</h4>
+	    	</div>		    	
+	    </a>
+	    <a class="fancybox" id="300" rel="group" href="#BBQ" title="BBQ">
+	    	<div class="photos-sub-title">
+	    		<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/p417x417/1238923_516209258462937_367274963_n.jpg?oh=b8d27a5f1cc3a69449564e4469ee2182&oe=546CF751&__gda__=1417417149_50a2c11b99e12d9979f873ae58c91e2e" >
+	    		<h4>Chuseok Festival BBQ</h4>
+	    	</div>		    	
+	    </a>
 	</div>
-	<div style="margin-left:-9999px">
+	<div style="display:none">
 		<div id="SNL"> 
 			<div class="gallery" id="snl">				
 				<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1456695_542649682485561_1759024476_n.jpg?oh=d90ae768abd4fd2ed2ff782225640887&oe=546B11EA&__gda__=1416513349_7bbad8df324d92543704e9105771b1ed">
@@ -233,7 +190,7 @@
 			</div>
 		</div>
 	</div>
-	<div style="margin-left:-9999px">
+	<div style="display:none">
 		<div id="BBQ">
 			<div class="gallery" id="gallery2">
 				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xap1/t1.0-9/1239661_516208171796379_850692583_n.jpg">

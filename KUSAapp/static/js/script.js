@@ -17,6 +17,7 @@ $(document).ready(function() {
 
 	// photo carousel
 	var carousel = $('.jcarousel').jcarousel({
+		scroll: 1,
 		wrap: 'both'
 	}); 
 	carousel.jcarouselAutoscroll({
@@ -48,24 +49,20 @@ $(document).ready(function() {
     }, function() {
 	    $(this).attr('src', '/static/images/dot.png');
 	});
+	
+	// about tabs
+	$('#about-tab a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+	});
 
-    // lightbox for about page
- //    $(".fancybox").fancybox({
-	//     height: 350,
- //    	width: 650,
-	//     fitToView : false,
- //   		autoSize : false,
- //   		helpers : {
-	//         overlay : {
-	//             css : {
-	//                 'background' : 'rgba(58, 42, 45, 0.5)'
-	//             }
-	//         },
-	//         title: {
-	//             type : 'over'
-	//         }
-	//     }
-	// });
+    // exec tabs
+	$('#exec-tab a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+	});
+
+	// lightbox for photos
 	$(".fancybox").fancybox({
 		arrows: false,
 		helpers : {
@@ -84,13 +81,7 @@ $(document).ready(function() {
 		var gallery = "#" + $(title).children().first().attr('id');
 		Galleria.run(gallery);	
 	})
-	
 
-    // exec tabs
-	$('#exec-tab a').click(function (e) {
-		e.preventDefault()
-		$(this).tab('show')
-	});
 
     // smooth scrolling to anchor
     $('#nav a[href*=#]:not([href=#])').click(function() {
