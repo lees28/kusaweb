@@ -132,7 +132,7 @@ p {
 /* carousel */
 #carousel {
 	background-image:url("../images/nasty_fabric.png");
-	height:			  560px;
+	height:			  600px;
 }
 #carousel-and-nav {
 	height:  500px;
@@ -145,7 +145,7 @@ p {
     /*width:	  750px;
     height:   420px;*/
     width:100%;
-    height:560px;
+    height:600px;
     margin:	  0 auto;
     /*border:   5px solid grey;*/
 }
@@ -181,11 +181,11 @@ p {
 }
 	#explore-title {
 		left:100px;
-		top:60px;
+		top:40px;
 	}
 	#explore-desc {
 		left:400px;
-		top:95px;
+		top:75px;
 	}
 	#explore-desc p {
 		float:left;
@@ -193,10 +193,10 @@ p {
 		clear:both;
 	}
 	#learn-title {
-		top:380px;
+		top:400px;
 	}
 	#learn-desc {
-		top:415px;
+		top:435px;
 	}
 	#learn-desc p {
 		float:left;
@@ -204,10 +204,10 @@ p {
 		clear:both;
 	}
 	#connect-title {
-		top:60px;
+		top:40px;
 	}
 	#connect-desc {
-		top:95px;
+		top:75px;
 	}
 	#connect-desc p {
 		float:left;
@@ -257,7 +257,7 @@ p {
 
 #about {
 	background-image: url("../images/grey_wash_wall.png");
-	height: 		  510px;
+	height: 		  490px;
 	/*	*/
 }
 #about h1 {
@@ -315,6 +315,9 @@ p {
 }
 #exec h1 {
 	border-bottom: 4px solid #B4B4B4;
+}
+#exec h5 {
+	font-size:14px;
 }
 #exec p {
 	margin: 0 auto;
