@@ -107,7 +107,7 @@
 			"Major": ["Computer Science"],
 			"Class": 2015,
 			"Hometown": "Vancouver, Canada",
-			"Photo": "",
+			"Photo": "/static/photos/alex.jpg",
 			"Email": "ss456@duke.edu"
 		}
 	]
