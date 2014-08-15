@@ -39,7 +39,7 @@ $(document).ready(function() {
 		wrap: 'both'
 	}); 
 	carousel.jcarouselAutoscroll({
-            interval: 8000,
+            interval: 6000,
             target: '+=1',
             autostart: true,
     });
@@ -88,6 +88,8 @@ $(document).ready(function() {
 		e.preventDefault()
 		$(this).tab('show')
 	});
+	// absolute position for white rectangle at the end of about
+	$('#white-rectangle').css({"left": width/2, "top":$("#header").height() + $("#carousel").height() + 410});
 
     // exec tabs
 	$('#exec-tab a').click(function (e) {
@@ -123,7 +125,7 @@ $(document).ready(function() {
 				right: this.prev
 			});
 		});
-		var title = "#" + $(this).attr('title')
+		var title = $(this).attr('href');
 		var gallery = "#" + $(title).children().first().attr('id');
 		Galleria.run(gallery);	
 	})

@@ -1,0 +1,84 @@
+{% block exec %}
+<div id="exec">
+	<div class="section-container">
+		<div class="narrower-container">
+		    <h1> Exec Members </h1>
+		    <!-- Nav tabs -->
+		    <div class="section-content">
+				<ul class="nav nav-tabs" id="exec-tab" role="tablist">
+					<!--President First-->
+					{% for position, members in execs.iteritems %}
+						{% if position == 'Co-Presidents' %}
+							<li class="active"><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>	
+						{% endif %}
+					{% endfor %}
+					<!--Then Vice President-->
+					{% for position, members in execs.iteritems %}
+						{% if position == 'Vice-President' %}
+							<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>	
+						{% endif %}
+					{% endfor %}
+					<!--Then the rest-->
+					{% for position, members in execs.iteritems %}
+						{% if position != 'Co-Presidents' and position != 'Vice-President'%}
+							{% if position != 'Treasurer' and position != 'Webmaster' %}
+								<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+					{% for position, members in execs.iteritems %}
+						{% if position == 'Treasurer' or position == 'Webmaster'%}
+							<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content" id="exec-content">
+				{% for position, members in execs.iteritems %}
+					{% if position == 'Co-Presidents' %}
+						<div class="tab-pane fade in active" id="{{position}}">
+					{% else %}
+						<div class="tab-pane fade" id="{{position}}">
+					{% endif %}
+						<br>
+						{% for member in members %}
+							<table>
+								<tr>
+									<td rowspan="5"><img src="{{member.Photo}}" /></td>
+									<th>Name: </th>
+									<td>{{member.Name}}</td>
+								</tr>
+								<tr>
+									<th>Class: </th>
+									<td>{{member.Class}}</td>
+								</tr>
+								<tr>
+									<th>Major: </th>
+									<td>
+										{% for m in member.Major %}
+											{{m}} 
+											{% if not forloop.last %}
+												&
+											{% endif %}
+										{% endfor %}
+									</td>
+								</tr>
+								<tr>
+									<th>Hometown: </th>
+									<td>{{member.Hometown}}</td>
+								</tr>
+								<tr>
+									<th>Email:</th>
+									<td>{{member.Email}}</td>
+								</tr>
+							</table>
+						{% endfor %}
+						</div>
+				{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
