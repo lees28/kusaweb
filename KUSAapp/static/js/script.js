@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	
+//--------------- navbar/navigation ------------------//
 	//fix nav bar at top when scrolled down
 	$(window).bind('scroll', function() {
 		var height = $('#navbar').height() + 'px';
@@ -12,10 +14,26 @@ $(document).ready(function() {
 		}
 	});
 
-	//parallax scrolling
-	// $('#carousel').stellar();
+	// smooth scrolling to anchor
+    $('#navbar a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	    	var target = $(this.hash);
+	      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      	if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top - $('#navbar').height()
+				}, 1000);
+			    return false;
+			}
+	    }
+	});
 
-	// photo carousel
+	    // scroll to top
+	$('#toTop').click(function () {
+		$('html, body').animate({scrollTop: 0}, 1000);
+	});
+
+//----------------- photo carousel ------------------//
 	var carousel = $('.jcarousel').jcarousel({
 		scroll: 1,
 		wrap: 'both'
@@ -27,8 +45,18 @@ $(document).ready(function() {
     });
 
 	// set width of images to be same as browser width
-	var carousel_width = $('.jcarousel').width();
-    $(".jcarousel li").width(carousel_width);
+	var width = $('.jcarousel').width();
+    $(".jcarousel li").width(width);
+
+    // set position for photo descriptions
+    var ltwidth = 2*width - 442;
+    var ldwidth = 2*width - 212;
+    $("#learn-title").css({"left": ltwidth});	
+	$("#learn-desc").css({"left": ldwidth});
+	var ctwidth = 3*width - 488;
+	var cdwidth = 3*width - 158;
+	$("#connect-title").css({"left": ctwidth});	
+	$("#connect-desc").css({"left": cdwidth});
 
 	//arrows
 	$('.jcarousel-prev').jcarouselControl({
@@ -53,8 +81,9 @@ $(document).ready(function() {
     }, function() {
 	    $(this).attr('src', '/static/images/dot.png');
 	});
-	
-	// about tabs
+
+//-------------- bootstrap tabs/pills --------------//
+	// about pills
 	$('#about-tab a').click(function (e) {
 		e.preventDefault()
 		$(this).tab('show')
@@ -66,6 +95,7 @@ $(document).ready(function() {
 		$(this).tab('show')
 	});
 
+//------------------ Photo gallery-------------------//
 	// lightbox for photos
 	$(".fancybox").fancybox({
 		arrows: false,
@@ -84,6 +114,7 @@ $(document).ready(function() {
 	    }
 	});
 	
+	// Galleria photo slideshow
 	Galleria.loadTheme('/static/galleria/themes/classic/galleria.classic.min.js');
 	$(".fancybox").click(function() {
 		Galleria.ready(function() {
@@ -96,25 +127,5 @@ $(document).ready(function() {
 		var gallery = "#" + $(title).children().first().attr('id');
 		Galleria.run(gallery);	
 	})
-
-
-    // smooth scrolling to anchor
-    $('#navbar a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	    	var target = $(this.hash);
-	      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      	if (target.length) {
-				$('html,body').animate({
-					scrollTop: target.offset().top - $('#navbar').height()
-				}, 1000);
-			    return false;
-			}
-	    }
-	});
-
-    // scroll to top
-	$('#toTop').click(function () {
-		$('html, body').animate({scrollTop: 0}, 1000);
-	});
 	
 });

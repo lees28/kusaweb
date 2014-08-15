@@ -178,16 +178,15 @@ p {
 	font-size: 20px;
 	float:left;
 	margin:0;
+	clear:both;
 }
 #learn-title {
 	position: absolute;
-	left:2150px;
 	top:380px;
 	font-size: 100px;
 }
 #learn-desc {
 	position: absolute;
-	left:2380px;
 	top:400px;
 	/*width:20%;*/
 }
@@ -195,23 +194,22 @@ p {
 	font-size: 20px;
 	float:left;
 	margin:0;
+	clear:both;
 }
 #connect-title {
 	position: absolute;
-	left:3400px;
 	top:60px;
 	font-size: 100px;
 }
 #connect-desc {
 	position: absolute;
-	left:3730px;
 	top:80px;
-	/*width:20%;*/
 }
 #connect-desc p {
 	font-size: 20px;
 	float:left;
 	margin:0;
+	clear:both;
 }
 
 
