@@ -29,7 +29,8 @@ $(document).ready(function() {
 	});
 
 	    // scroll to top
-	$('#toTop').click(function () {
+	$('#toTop a').click(function (e) {
+		e.preventDefault();
 		$('html, body').animate({scrollTop: 0}, 1000);
 	});
 

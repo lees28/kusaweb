@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     
     #homepage
-    url(r'^/?$','KUSAapp.views.homepage'),
+    url(r'^/?$','KUSAapp.views.engHomepage'),
     
     #different languages
     url(r'^eng/?$', 'KUSAapp.views.engHomepage'),
