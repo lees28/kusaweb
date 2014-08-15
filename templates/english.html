@@ -17,7 +17,7 @@
 			        </li>
 			        <li>
 			        	<img src="{{ STATIC_URL }}images/photo3.jpg">
-			        	<p id="mingle">mingle</p>
+			        	<p id="connect">connect</p>
 			        </li>
 		        </ul>
 		    </div>
@@ -34,36 +34,40 @@
 
 {% block about %}
 <div id="about">
-	<div class="narrower-container">
-	    <h1> About Us </h1>
-	    <div id="about-list">
-		    <ul class="nav nav-pills nav-stacked" id="about-tab" role="tablist">
-				<li class="active"><a href="#mission" role="tab" data-toggle="tab"><h5>Mission Statement</h5></a></li>	
-				<li><a href="#cultural" role="tab" data-toggle="tab"><h5>Cultural Activities</h5></a></li>
-				<li><a href="#political" role="tab" data-toggle="tab"><h5>Political Activities</h5></a></li>
-				<li><a href="#social" role="tab" data-toggle="tab"><h5>Social Activities</h5></a></li>
-			</ul>
-		</div>
-		<div class="tab-content" id="about-content">
-			<div class="tab-pane fade in active" id="mission">
-				<p>
-					Founded in 2002, the Korean Undergraduate Students Association (KUSA) exists to provide a sense of community for undergraduate students at Duke University who share a common interest in Korean culture. KUSA is dedicated to promoting the cultural, social, and political interests of the Korean community on campus through a variety of events. Furthermore, we seek to serve as a vehicle for encouraging friendship and mentorship by organizing social activities throughout the year.
-				</p>
-			</div>
-			<div class="tab-pane fade" id="cultural">
-				<p>
-					KUSA strives to promote awareness of Korean culture by collaborating with our Korean affiliated performance organizations. Duke students have opportunities to play traditional Korean percussion (samulnori), learn choreography to the latest K-Pop music, and harmonize with our singing groups, both acapella and rock. Additionally, we have an annual cultural showcase that allows students to display their talents as part of a group or individually on a grand stage. We also participate in university-sponsored events throughout the year that promote multicultural awareness and celebrate the diversity of the Duke community. 
-				</p>
-			</div>
-			<div class="tab-pane fade" id="political">
-				<p>
-					We organize various events that educate the rest of the Duke community about current issues relevant to Korean society as well as those that pertain to the identity of being Korean American. We seek to collaborate with academic departments and other student organizations throughout the year as a means of inviting guest speakers and encouraging open dialogue of Korean issues.  
-				</p>
-			</div>
-			<div class="tab-pane fade" id="social">
-				<p>
-					KUSA is committed to fostering good relationships that allow one to feel he or she belongs to a tight-knit family during their Duke experience. We organize many social activities such as off-campus excursions, sporting events, and of course Korean meals that will ease your homesickness. We also frequently collaborate with other cultural organizations that involve fierce competition for prizes and immeasurable glory, but more importantly fellowship that is fruitful and long-lasting.  
-				</p>
+	<div class="section-container">
+		<div class="narrower-container">		
+		    <h1> About Us </h1>
+		    <div class="section-content">
+			    <div id="about-list">
+				    <ul class="nav nav-pills nav-stacked" id="about-tab" role="tablist">
+						<li class="active"><a href="#mission" role="tab" data-toggle="tab"><h5>Mission Statement</h5></a></li>	
+						<li><a href="#cultural" role="tab" data-toggle="tab"><h5>Cultural Activities</h5></a></li>
+						<li><a href="#political" role="tab" data-toggle="tab"><h5>Political Activities</h5></a></li>
+						<li><a href="#social" role="tab" data-toggle="tab"><h5>Social Activities</h5></a></li>
+					</ul>
+				</div>
+				<div class="tab-content" id="about-content">
+					<div class="tab-pane fade in active" id="mission">
+						<p>
+							Founded in 2002, the Korean Undergraduate Students Association (KUSA) exists to provide a sense of community for undergraduate students at Duke University who share a common interest in Korean culture. KUSA is dedicated to promoting the cultural, social, and political interests of the Korean community on campus through a variety of events. Furthermore, we seek to serve as a vehicle for encouraging friendship and mentorship by organizing social activities throughout the year.
+						</p>
+					</div>
+					<div class="tab-pane fade" id="cultural">
+						<p>
+							KUSA strives to promote awareness of Korean culture by collaborating with our Korean affiliated performance organizations. Duke students have opportunities to play traditional Korean percussion (samulnori), learn choreography to the latest K-Pop music, and harmonize with our singing groups, both acapella and rock. Additionally, we have an annual cultural showcase that allows students to display their talents as part of a group or individually on a grand stage. We also participate in university-sponsored events throughout the year that promote multicultural awareness and celebrate the diversity of the Duke community. 
+						</p>
+					</div>
+					<div class="tab-pane fade" id="political">
+						<p>
+							We organize various events that educate the rest of the Duke community about current issues relevant to Korean society as well as those that pertain to the identity of being Korean American. We seek to collaborate with academic departments and other student organizations throughout the year as a means of inviting guest speakers and encouraging open dialogue of Korean issues.  
+						</p>
+					</div>
+					<div class="tab-pane fade" id="social">
+						<p>
+							KUSA is committed to fostering good relationships that allow one to feel he or she belongs to a tight-knit family during their Duke experience. We organize many social activities such as off-campus excursions, sporting events, and of course Korean meals that will ease your homesickness. We also frequently collaborate with other cultural organizations that involve fierce competition for prizes and immeasurable glory, but more importantly fellowship that is fruitful and long-lasting.  
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -74,80 +78,84 @@
 
 {% block exec %}
 <div id="exec">
-	<div class="narrower-container">
-	    <h1> Exec Members </h1>
-	    <!-- Nav tabs -->
-		<ul class="nav nav-tabs" id="exec-tab" role="tablist">
-			<!--President First-->
-			{% for position, members in execs.iteritems %}
-				{% if position == 'Co-Presidents' %}
-					<li class="active"><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>	
-				{% endif %}
-			{% endfor %}
-			<!--Then Vice President-->
-			{% for position, members in execs.iteritems %}
-				{% if position == 'Vice-President' %}
-					<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>	
-				{% endif %}
-			{% endfor %}
-			<!--Then the rest-->
-			{% for position, members in execs.iteritems %}
-				{% if position != 'Co-Presidents' and position != 'Vice-President'%}
-					{% if position != 'Treasurer' and position != 'Webmaster' %}
-						<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
-			{% for position, members in execs.iteritems %}
-				{% if position == 'Treasurer' or position == 'Webmaster'%}
-					<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
-				{% endif %}
-			{% endfor %}
-		</ul>
+	<div class="section-container">
+		<div class="narrower-container">
+		    <h1> Exec Members </h1>
+		    <!-- Nav tabs -->
+		    <div class="section-content">
+				<ul class="nav nav-tabs" id="exec-tab" role="tablist">
+					<!--President First-->
+					{% for position, members in execs.iteritems %}
+						{% if position == 'Co-Presidents' %}
+							<li class="active"><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>	
+						{% endif %}
+					{% endfor %}
+					<!--Then Vice President-->
+					{% for position, members in execs.iteritems %}
+						{% if position == 'Vice-President' %}
+							<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>	
+						{% endif %}
+					{% endfor %}
+					<!--Then the rest-->
+					{% for position, members in execs.iteritems %}
+						{% if position != 'Co-Presidents' and position != 'Vice-President'%}
+							{% if position != 'Treasurer' and position != 'Webmaster' %}
+								<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+					{% for position, members in execs.iteritems %}
+						{% if position == 'Treasurer' or position == 'Webmaster'%}
+							<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
 
-		<!-- Tab panes -->
-		<div class="tab-content" id="exec-content">
-		{% for position, members in execs.iteritems %}
-			{% if position == 'Co-Presidents' %}
-				<div class="tab-pane fade in active" id="{{position}}">
-			{% else %}
-				<div class="tab-pane fade" id="{{position}}">
-			{% endif %}
-				<br>
-				{% for member in members %}
-					<table>
-						<tr>
-							<td rowspan="5"><img src="{{member.Photo}}" /></td>
-							<th>Name: </th>
-							<td>{{member.Name}}</td>
-						</tr>
-						<tr>
-							<th>Class: </th>
-							<td>{{member.Class}}</td>
-						</tr>
-						<tr>
-							<th>Major: </th>
-							<td>
-								{% for m in member.Major %}
-									{{m}} 
-									{% if not forloop.last %}
-										&
-									{% endif %}
-								{% endfor %}
-							</td>
-						</tr>
-						<tr>
-							<th>Hometown: </th>
-							<td>{{member.Hometown}}</td>
-						</tr>
-						<tr>
-							<th>Email:</th>
-							<td>{{member.Email}}</td>
-						</tr>
-					</table>
+				<!-- Tab panes -->
+				<div class="tab-content" id="exec-content">
+				{% for position, members in execs.iteritems %}
+					{% if position == 'Co-Presidents' %}
+						<div class="tab-pane fade in active" id="{{position}}">
+					{% else %}
+						<div class="tab-pane fade" id="{{position}}">
+					{% endif %}
+						<br>
+						{% for member in members %}
+							<table>
+								<tr>
+									<td rowspan="5"><img src="{{member.Photo}}" /></td>
+									<th>Name: </th>
+									<td>{{member.Name}}</td>
+								</tr>
+								<tr>
+									<th>Class: </th>
+									<td>{{member.Class}}</td>
+								</tr>
+								<tr>
+									<th>Major: </th>
+									<td>
+										{% for m in member.Major %}
+											{{m}} 
+											{% if not forloop.last %}
+												&
+											{% endif %}
+										{% endfor %}
+									</td>
+								</tr>
+								<tr>
+									<th>Hometown: </th>
+									<td>{{member.Hometown}}</td>
+								</tr>
+								<tr>
+									<th>Email:</th>
+									<td>{{member.Email}}</td>
+								</tr>
+							</table>
+						{% endfor %}
+						</div>
 				{% endfor %}
 				</div>
-		{% endfor %}
+			</div>
 		</div>
 	</div>
 </div>
@@ -155,51 +163,55 @@
 
 {% block photo %}
 <div id="photos">
-	<div class="narrower-container">
-	    <h1> Photos </h1>
-	    <a class="fancybox" id="300" rel="group" href="#SNL" title="SNL">
-	    	<div class="photos-sub-title">
-	    		<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1390719_535952546488608_256787894_n.jpg?oh=e2e97980ac8fedf13434c3b067d95878&oe=545B12F3&__gda__=1416882450_dca330f6acfed00ce4b86ae7380621e9" >
-	    		<h4>Korea Night - SNL</h4>
-	    	</div>		    	
-	    </a>
-	    <a class="fancybox" id="300" rel="group" href="#BBQ" title="BBQ">
-	    	<div class="photos-sub-title">
-	    		<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/p417x417/1238923_516209258462937_367274963_n.jpg?oh=b8d27a5f1cc3a69449564e4469ee2182&oe=546CF751&__gda__=1417417149_50a2c11b99e12d9979f873ae58c91e2e" >
-	    		<h4>Chuseok Festival BBQ</h4>
-	    	</div>		    	
-	    </a>
-	</div>
-	<div style="display:none">
-		<div id="SNL"> 
-			<div class="gallery" id="snl">				
-				<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1456695_542649682485561_1759024476_n.jpg?oh=d90ae768abd4fd2ed2ff782225640887&oe=546B11EA&__gda__=1416513349_7bbad8df324d92543704e9105771b1ed">
-				<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xfp1/t1.0-9/1468794_542649599152236_648908827_n.jpg">
-				<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/1470315_542649772485552_1378419564_n.jpg">
-				<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/1471883_542650079152188_1531925360_n.jpg">
-				<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/734171_542650715818791_651123690_n.jpg?oh=353ea8868b0300b4480eea01b75f9cb0&oe=5481B54A&__gda__=1417409523_3f8cf461f76793e421f30315c1f4cd27">
-				<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/1396055_542651589152037_245931603_n.jpg">
-				<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/545985_542651722485357_1773303613_n.jpg">
-				<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-prn2/t1.0-9/1425648_542651909152005_1905098223_n.jpg">
-				<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xpf1/t1.0-9/1466157_542652165818646_500562654_n.jpg">
-				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xap1/t1.0-9/1463964_542653075818555_107361965_n.jpg">
-				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/539720_542653535818509_1645138556_n.jpg?oh=4cb0dd6fb167567a47c1ede7cd9afb98&oe=5460817D">
-				<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn2/t1.0-9/558619_542653975818465_315431770_n.jpg">
-				<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn2/t1.0-9/1460082_542654559151740_696946073_n.jpg">
-				<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1461204_542654769151719_613210277_n.jpg?oh=307cc8cf20eeb0f8105311fe6f633e4b&oe=54626C2F">
+	<div class="section-container">
+		<div class="narrower-container">
+		    <h1> Photos </h1>
+		    <div class="section-content">
+			    <a class="fancybox" id="300" rel="group" href="#SNL" title="SNL">
+			    	<div class="photos-sub-title">
+			    		<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1390719_535952546488608_256787894_n.jpg?oh=e2e97980ac8fedf13434c3b067d95878&oe=545B12F3&__gda__=1416882450_dca330f6acfed00ce4b86ae7380621e9" >
+			    		<h4>Korea Night - SNL</h4>
+			    	</div>		    	
+			    </a>
+			    <a class="fancybox" id="300" rel="group" href="#BBQ" title="BBQ">
+			    	<div class="photos-sub-title">
+			    		<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/p417x417/1238923_516209258462937_367274963_n.jpg?oh=b8d27a5f1cc3a69449564e4469ee2182&oe=546CF751&__gda__=1417417149_50a2c11b99e12d9979f873ae58c91e2e" >
+			    		<h4>Chuseok Festival BBQ</h4>
+			    	</div>		    	
+			    </a>
 			</div>
 		</div>
-	</div>
-	<div style="display:none">
-		<div id="BBQ">
-			<div class="gallery" id="gallery2">
-				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xap1/t1.0-9/1239661_516208171796379_850692583_n.jpg">
-				<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-frc3/t1.0-9/1233493_516208175129712_1593840193_n.jpg">
-				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xpa1/t1.0-9/563585_516208168463046_1545374843_n.jpg">
-				<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/p417x417/734386_516208268463036_443641389_n.jpg?oh=99c0d00289f6be39daf4b8d63d33efb5&oe=546BF19F">
-				<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/p417x417/1238923_516209258462937_367274963_n.jpg?oh=b8d27a5f1cc3a69449564e4469ee2182&oe=546CF751&__gda__=1417417149_50a2c11b99e12d9979f873ae58c91e2e">
-				<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/v/t1.0-9/p417x417/1236318_516209311796265_1024590172_n.jpg?oh=abed357634a9e331d3e00eca3cc54b8d&oe=547D2908&__gda__=1416507160_092062362e30bafa96b86ad0dafe4822">
-				<img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/p417x417/579058_516209361796260_1135421937_n.jpg">
+		<div style="display:none">
+			<div id="SNL"> 
+				<div class="gallery" id="snl">				
+					<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1456695_542649682485561_1759024476_n.jpg?oh=d90ae768abd4fd2ed2ff782225640887&oe=546B11EA&__gda__=1416513349_7bbad8df324d92543704e9105771b1ed">
+					<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xfp1/t1.0-9/1468794_542649599152236_648908827_n.jpg">
+					<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/1470315_542649772485552_1378419564_n.jpg">
+					<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/1471883_542650079152188_1531925360_n.jpg">
+					<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/734171_542650715818791_651123690_n.jpg?oh=353ea8868b0300b4480eea01b75f9cb0&oe=5481B54A&__gda__=1417409523_3f8cf461f76793e421f30315c1f4cd27">
+					<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/1396055_542651589152037_245931603_n.jpg">
+					<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/545985_542651722485357_1773303613_n.jpg">
+					<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-prn2/t1.0-9/1425648_542651909152005_1905098223_n.jpg">
+					<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xpf1/t1.0-9/1466157_542652165818646_500562654_n.jpg">
+					<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xap1/t1.0-9/1463964_542653075818555_107361965_n.jpg">
+					<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/539720_542653535818509_1645138556_n.jpg?oh=4cb0dd6fb167567a47c1ede7cd9afb98&oe=5460817D">
+					<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn2/t1.0-9/558619_542653975818465_315431770_n.jpg">
+					<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn2/t1.0-9/1460082_542654559151740_696946073_n.jpg">
+					<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1461204_542654769151719_613210277_n.jpg?oh=307cc8cf20eeb0f8105311fe6f633e4b&oe=54626C2F">
+				</div>
+			</div>
+		</div>
+		<div style="display:none">
+			<div id="BBQ">
+				<div class="gallery" id="gallery2">
+					<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xap1/t1.0-9/1239661_516208171796379_850692583_n.jpg">
+					<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-frc3/t1.0-9/1233493_516208175129712_1593840193_n.jpg">
+					<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xpa1/t1.0-9/563585_516208168463046_1545374843_n.jpg">
+					<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-frc3/v/t1.0-9/p417x417/734386_516208268463036_443641389_n.jpg?oh=99c0d00289f6be39daf4b8d63d33efb5&oe=546BF19F">
+					<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/p417x417/1238923_516209258462937_367274963_n.jpg?oh=b8d27a5f1cc3a69449564e4469ee2182&oe=546CF751&__gda__=1417417149_50a2c11b99e12d9979f873ae58c91e2e">
+					<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-frc3/v/t1.0-9/p417x417/1236318_516209311796265_1024590172_n.jpg?oh=abed357634a9e331d3e00eca3cc54b8d&oe=547D2908&__gda__=1416507160_092062362e30bafa96b86ad0dafe4822">
+					<img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/p417x417/579058_516209361796260_1135421937_n.jpg">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -208,33 +220,40 @@
 
 {% block calendar %}
 <div id="calendar">
-	<div class="narrower-container">
-		<h1> Calendar </h1>
-		<iframe src="https://www.google.com/calendar/embed?title=KUSA%20Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=kusa.dukeu%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	<div class="section-container">
+		<div class="narrower-container">
+			<h1> Calendar </h1>
+			<div class="section-content">
+				<iframe src="https://www.google.com/calendar/embed?title=KUSA%20Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=kusa.dukeu%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+		</div>
 	</div>
 </div>
 {% endblock %}
 
 {% block contact %}
 <div id="contact">
-	<div class="narrower-container">
-		<h1>Contact Form</h1>
-		<p>To send us a message, please fill out the form below!</p>
-	    {% if errors %}
-	        <ul>
-	            {% for error in errors %}
-	            <li>{{ error }}</li>
-	            {% endfor %}
-	        </ul>
-	    {% endif %}
-		  
-	    <form action="/contact/" method="post">{% csrf_token %}
-	        <p>Subject: <input type="text" name="subject"></p>
-	        <p>Your e-mail: <input type="text" name="email"></p>
-	        <p>Message: <textarea name="message" rows="10" cols="50"></textarea></p>
-	        <input type="submit" value="Submit">
-	    </form>
-	    <div id="toTop"><button>top</button></div>
+	<div class="section-container">
+		<div class="narrower-container">
+			<h1>Contact</h1>
+			<div class="section-content">
+				<p>To send us a message, please fill out the form below!</p>
+			    {% if errors %}
+			        <ul>
+			            {% for error in errors %}
+			            <li>{{ error }}</li>
+			            {% endfor %}
+			        </ul>
+			    {% endif %}
+				  
+			    <form action="/contact/" method="post">{% csrf_token %}
+			        <p>Subject: <input type="text" name="subject"></p>
+			        <p>Your e-mail: <input type="text" name="email"></p>
+			        <p>Message: <textarea name="message" rows="10" cols="50"></textarea></p>
+			        <input type="submit" value="Submit">
+			    </form>
+			</div>
+		</div>
 	</div>
 </div>
 {% endblock %}

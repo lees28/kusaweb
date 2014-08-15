@@ -1,13 +1,13 @@
 $(document).ready(function() {
 	//fix nav bar at top when scrolled down
 	$(window).bind('scroll', function() {
-		var height = $('#nav').height() + 'px';
+		var height = $('#navbar').height() + 'px';
 		if($(window).scrollTop() > 240) {
-			$('#nav').addClass('fixed');
-			$('#nav').css('border-top', 0);
+			$('#navbar').addClass('fixed');
+			$('#navbar').css('border-top', 0);
 		} else {
-			$('#nav').removeClass('fixed');
-			$('#nav').css('border-top', '1px solid grey');
+			$('#navbar').removeClass('fixed');
+			$('#navbar').css('border-top', '1px solid #EAEAEA');
 			$('#maininfo').css('margin-top', 0);
 		}
 	});
@@ -65,6 +65,11 @@ $(document).ready(function() {
 	// lightbox for photos
 	$(".fancybox").fancybox({
 		arrows: false,
+		keys: {
+			next: null,
+			prev: null,
+			play: null
+		},
 		helpers : {
 	        overlay : {
 	            css : {
@@ -77,6 +82,12 @@ $(document).ready(function() {
 	
 	Galleria.loadTheme('/static/galleria/themes/classic/galleria.classic.min.js');
 	$(".fancybox").click(function() {
+		Galleria.ready(function() {
+			this.attachKeyboard({
+				left: this.prev,
+				right: this.prev
+			});
+		});
 		var title = "#" + $(this).attr('title')
 		var gallery = "#" + $(title).children().first().attr('id');
 		Galleria.run(gallery);	
@@ -84,13 +95,13 @@ $(document).ready(function() {
 
 
     // smooth scrolling to anchor
-    $('#nav a[href*=#]:not([href=#])').click(function() {
+    $('#navbar a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	    	var target = $(this.hash);
 	      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	      	if (target.length) {
 				$('html,body').animate({
-					scrollTop: target.offset().top - $('#nav').height()
+					scrollTop: target.offset().top - $('#navbar').height()
 				}, 1000);
 			    return false;
 			}
