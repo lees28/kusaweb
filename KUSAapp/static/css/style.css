@@ -59,7 +59,9 @@ p {
 	background-image: url("../images/grey_wash_wall.png");
 }
 #topbar p {
-	padding-top: 15px;
+	padding-top: 8px;
+	font-size: 18px;
+	color: #B7B7B7;
 }
 #desc {
 	float: left;
@@ -135,7 +137,7 @@ p {
     overflow: hidden;
     /*width:	  750px;
     height:   420px;*/
-    width:1296px;
+    width:100%;
     height:560px;
     margin:	  0 auto;
     /*border:   5px solid grey;*/
@@ -152,24 +154,67 @@ p {
 .jcarousel li {
     /* Required only for block elements like <li>'s */
     float: left;
-    /*width:750px;*/
     width:1296px;
+    color:white;
 }
 .jcarousel img {
 	width:100%;
 	height:100%;
-	opacity:0.9;
+	opacity:0.85;
 }
-.jcarousel p {
+#explore-title {
 	position: absolute;
-	color:white;
-	opacity:0.8;
+	left:100px;
+	top:60px;
 	font-size: 100px;
-	top:350px;
 }
-#explore {
-	left:540px;
+#explore-desc {
+	position: absolute;
+	left:400px;
+	top:80px;
+	/*width:20%;*/
 }
+#explore-desc p {
+	font-size: 20px;
+	float:left;
+	margin:0;
+}
+#learn-title {
+	position: absolute;
+	left:2150px;
+	top:380px;
+	font-size: 100px;
+}
+#learn-desc {
+	position: absolute;
+	left:2380px;
+	top:400px;
+	/*width:20%;*/
+}
+#learn-desc p {
+	font-size: 20px;
+	float:left;
+	margin:0;
+}
+#connect-title {
+	position: absolute;
+	left:3400px;
+	top:60px;
+	font-size: 100px;
+}
+#connect-desc {
+	position: absolute;
+	left:3730px;
+	top:80px;
+	/*width:20%;*/
+}
+#connect-desc p {
+	font-size: 20px;
+	float:left;
+	margin:0;
+}
+
+
 #learn {
 	left:1510px;
 }

@@ -21,10 +21,14 @@ $(document).ready(function() {
 		wrap: 'both'
 	}); 
 	carousel.jcarouselAutoscroll({
-            interval: 6000,
+            interval: 8000,
             target: '+=1',
             autostart: true,
     });
+
+	// set width of images to be same as browser width
+	var carousel_width = $('.jcarousel').width();
+    $(".jcarousel li").width(carousel_width);
 
 	//arrows
 	$('.jcarousel-prev').jcarouselControl({
