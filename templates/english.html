@@ -78,7 +78,7 @@
 		<div class="narrower-container">
 			<h1>Contact</h1>
 			<div class="section-content">
-				<p>To send us a message, please fill out the form below!</p>
+				<p>Questions or Comments? Feel free to send us a message by filling out the form below. You can also <a href="mailto:kusa.dukeu@gmail.com">mail us directly</a> or follow us on <a href="https://www.facebook.com/DukeKUSA">Facebook!</a></p>
 			    {% if errors %}
 			        <ul>
 			            {% for error in errors %}
@@ -88,10 +88,21 @@
 			    {% endif %}
 				  
 			    <form action="/contact/" method="post">{% csrf_token %}
-			        <p>Subject: <input type="text" name="subject"></p>
-			        <p>Your e-mail: <input type="text" name="email"></p>
-			        <p>Message: <textarea name="message" rows="10" cols="50"></textarea></p>
-			        <input type="submit" value="Submit">
+			    	<table>
+			    		<tr>
+			    			<td>Subject:</td>
+			    			<td><input type="text" name="subject"></td>
+			    		</tr>
+			    		<tr>
+			    			<td>Your e-mail:</td>
+			    			<td><input type="text" name="email"></td>
+			    		</tr>
+					    <tr>
+					    	<td>Message:</td>
+					    	<td><textarea name="message" rows="10" cols="50"></textarea></td>					        
+					    </tr>
+			        </table>
+			        <input type="submit" value="Submit" id="form-submit">
 			    </form>
 			</div>
 		</div>

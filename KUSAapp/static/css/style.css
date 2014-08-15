@@ -16,7 +16,7 @@ h1 {
 	display:inline-block;
 }
 h4 {
-	font-size:14px;
+	font-size:15px;
 }
 h5 {
 	font-weight: bolder;
@@ -346,10 +346,8 @@ p {
 	padding-left:20px;
 }
 #photos {
-	/*background-color:#D9E0FF;*/
-	background-image: url("../images/polaroid.png");
+	background-image: url("../images/witewall_3.png");
 	height: 400px;
-	/*border-top: 1px solid #D9E0FF;*/
 	margin: 0 auto;	
 }
 
@@ -401,8 +399,8 @@ p {
 #contact {
 	/*background-color:#FFFFFF;*/
 	height: 550px;
-	border-top: 1px solid #D9E0FF;
 	margin: 0 auto;	
+	background-image:url("../images/witewall_3.png");
 }
 
 #contact h1 {
@@ -410,10 +408,15 @@ p {
 }
 #contact p {
 	text-align: left;
+	margin-bottom:20px;
 
 }
-form p {
-	font-size:14px;
+#contact td {
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+#form-submit {
+
 }
 
 /* Footer */
