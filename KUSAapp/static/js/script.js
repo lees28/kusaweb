@@ -3,8 +3,10 @@ $(document).ready(function() {
 //--------------- navbar/navigation ------------------//
 	//fix nav bar at top when scrolled down
 	$(window).bind('scroll', function() {
-		var height = $('#navbar').height() + 'px';
-		if($(window).scrollTop() > 240) {
+		var header_height = $('#header').height();
+		var nav_height = $('#navbar').height();
+		var height = header_height - nav_height
+		if($(window).scrollTop() > height) {
 			$('#navbar').addClass('fixed');
 			$('#navbar').css('border-top', 0);
 		} else {

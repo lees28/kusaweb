@@ -36,7 +36,8 @@ def contact(request):
                 ['alexsong93@gmail.com'], #email address where message is sent.
                 fail_silently=False
             )
-            return HttpResponseRedirect('/eng/')
+            # return render(request, 'english.html' {'form_success' : True})
+            return HttpResponseRedirect('/')
     return render(request, 'english.html',
         {'errors': errors})
     
