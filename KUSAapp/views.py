@@ -5,8 +5,6 @@ from django.shortcuts import render
 from django.shortcuts import render_to_response
 import json
 import os
-from postmark import PMMail
-from django.core.urlresolvers import reverse
 
 # Create your views here.
 
@@ -25,20 +23,13 @@ def contact(request):
         if request.POST.get('email') and '@' not in request.POST['email']:
             errors.append('Enter a valid e-mail address.')
         if not errors:
-            message = PMMail(api_key = os.environ.get('POSTMARK_API_KEY'),
-                 subject = request.POST['subject'],
-                 sender = request.POST['email'],
-                 to = 'alexsong93@gmail.com',
-                 text_body = request.POST['message'])
-            message.send()
-            # send_mail(
-            #     request.POST['subject'],
-            #     request.POST['message'],
-            #     request.POST.get('email', 'noreply@simplesite.com'),
-            #     ['alexsong93@gmail.com'], #email address where message is sent.
-            #     fail_silently=False
-            # )
-            # return render(request, 'english.html' {'form_success' : True})
+            send_mail(
+                request.POST['subject'],
+                request.POST['message'],
+                request.POST.get('email', 'noreply@simplesite.com'),
+                ['alexsong93@gmail.com'], #email address where message is sent.
+                fail_silently=False
+            )
             return HttpResponseRedirect('/')
     return render(request, 'english.html',
         {'errors': errors})
