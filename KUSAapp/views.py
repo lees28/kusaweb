@@ -14,25 +14,14 @@ def homepage(request):
         return render(request, 'english.html', {"execs":execs})
 
 def contact(request):
-    errors = []
-    if request.method == 'POST':
-        if not request.POST.get('subject', ''):
-            errors.append('Enter a subject.')
-        if not request.POST.get('message', ''):
-            errors.append('Enter a message.')
-        if request.POST.get('email') and '@' not in request.POST['email']:
-            errors.append('Enter a valid e-mail address.')
-        if not errors:
-            send_mail(
-                request.POST['subject'],
-                request.POST['message'],
-                request.POST.get('email', 'noreply@simplesite.com'),
-                ['alexsong93@gmail.com'], #email address where message is sent.
-                fail_silently=False
-            )
-            return HttpResponseRedirect('/')
-    return render(request, 'english.html',
-        {'errors': errors})
+    send_mail(
+        request.POST['subject'],
+        request.POST['message'],
+        request.POST.get('email', 'noreply@simplesite.com'),
+        ['kusa.dukeu@gmail.com'], #email address where message is sent.
+        fail_silently=False
+    )
+    return HttpResponseRedirect('/')
 
     
 

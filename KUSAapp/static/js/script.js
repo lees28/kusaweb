@@ -85,6 +85,7 @@ $(document).ready(function() {
 	    $(this).attr('src', '/static/images/dot.png');
 	});
 
+
 //-------------- bootstrap tabs/pills --------------//
 	// about pills
 	$('#about-tab a').click(function (e) {
@@ -101,6 +102,7 @@ $(document).ready(function() {
 	});
 
 //------------------ Photo gallery-------------------//
+
 	// lightbox for photos
 	$(".fancybox").fancybox({
 		arrows: false,
@@ -131,6 +133,26 @@ $(document).ready(function() {
 		var title = $(this).attr('href');
 		var gallery = "#" + $(title).children().first().attr('id');
 		Galleria.run(gallery);	
-	})
+	});
+
+//----------------Contact Form---------------//
+	$('#form-submit').click(function (e) {
+		if($('#form-subject').val().length == 0) {
+			e.preventDefault();
+			alert("Enter a subject!");
+		} else if($('#form-email').val().length == 0) {
+			e.preventDefault();
+			alert("Enter your email address!");
+		} else if($('#form-email').val().indexOf("@") == -1) {
+			e.preventDefault();
+			alert("Enter a valid email address!");
+		} else if($('#form-message').val().length == 0) {
+			e.preventDefault();
+			alert("Enter your message!");
+		} else {
+			alert("Thanks for your feedback! :)");
+		}
+	});
 	
 });
+

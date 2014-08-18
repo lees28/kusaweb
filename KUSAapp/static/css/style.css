@@ -47,7 +47,11 @@ p {
 	margin: 0 auto;
 }
 .section-container {
+	height:100%;
+}
+.section-title {
 	padding-top:10px;
+	height:100px;	
 }
 .section-content {
 	padding-top:20px;	
@@ -357,17 +361,34 @@ p {
 #photos p {
 	text-align: left;
 }
-#photos .photos-sub-title {
-	margin:20px;
-	display:inline-block;
+#photos table {
+	width:100%;
 }
-#photos .photos-sub-title img {
-	width:150px; 
-	height:150px;
-	border: 5px solid #C5C5C5;
+#photos table td {
+	height:210px;
 }
-#photos a {
+#photos table td a {
+	text-align: center;
 	text-decoration: none;
+}
+#photos .photo-desc {
+	text-align: center;
+	background-color:lightblue;
+	border: 5px solid #C5C5C5;
+	width:175px;
+	height:175px;
+	position:relative;
+	margin:0 auto;
+	display:none;
+}
+#photos h4 {
+	position:relative;
+}
+
+#photos .title-img img {
+	width:175px; 
+	height:175px;
+	border: 5px solid #C5C5C5;
 }
 
 .gallery { 
@@ -398,7 +419,7 @@ p {
 
 #contact {
 	/*background-color:#FFFFFF;*/
-	height: 550px;
+	height: 590px;
 	margin: 0 auto;	
 	background-image:url("../images/witewall_3.png");
 }
@@ -415,8 +436,11 @@ p {
 	padding-right: 20px;
 	padding-bottom: 10px;
 }
-#form-submit {
-
+#contact td input {
+	width: 200px;
+}
+#contact #form-submit {
+	width:75px;
 }
 
 /* Footer */
