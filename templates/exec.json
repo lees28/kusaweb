@@ -23,7 +23,7 @@
 			"Major": ["Economics", "International Comparative Studies"],
 			"Class": 2015,
 			"Hometown": "Suncheon, South Korea",
-			"Photo": "/static/photos/sooryun.jpg",
+			"Photo": "/static/photos/sooryun.png",
 			"Email": ""
 		}
 	],
@@ -41,7 +41,7 @@
 			"Major": ["Public Policy"],
 			"Class": 2015,
 			"Hometown": "Durham, NC",
-			"Photo": "/static/photos/bryan.jpg",
+			"Photo": "/static/photos/bryan.png",
 			"Email": "bryan.h.kim@duke.edu"
 		}
 	],
@@ -51,7 +51,7 @@
 			"Major": ["Biology"],
 			"Class": 2016,
 			"Hometown": "Tampa, FL",
-			"Photo": "/static/photos/alison.jpg",
+			"Photo": "/static/photos/alison.png",
 			"Email": "achoi94@gmail.com"
 		}
 	],
@@ -69,7 +69,7 @@
 			"Major": ["Biomedical Engineering"],
 			"Class": 2017,
 			"Hometown": "Suwon, South Korea",
-			"Photo": "/static/photos/diane.jpg",
+			"Photo": "/static/photos/diane.png",
 			"Email": ""
 		}
 	],
@@ -107,7 +107,7 @@
 			"Major": ["Computer Science"],
 			"Class": 2015,
 			"Hometown": "Vancouver, Canada",
-			"Photo": "/static/photos/alex.jpg",
+			"Photo": "/static/photos/alex.png",
 			"Email": "ss456@duke.edu"
 		}
 	]
