@@ -283,15 +283,6 @@ p {
 	padding-left:30px;
 	display:inline-block;
 }
-#about .about-sub-title {
-	margin:20px;
-	display:inline-block;
-	font-size: 20px;
-	font-weight: bold;
-	width:150px; 
-	height:150px; 
-	background-color:blue
-}
 #about .about-sub-desc {
 	text-align: left;
 }
