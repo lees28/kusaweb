@@ -312,7 +312,7 @@ p {
 	border-bottom: 4px solid #B4B4B4;
 }
 #exec h5 {
-	font-size:14px;
+	/*font-size:14px;*/
 }
 #exec p {
 	margin: 0 auto;
@@ -320,12 +320,6 @@ p {
 #exec img {
 	width:96px; 
 	height:128px;
-}
-#exec-tabs {
-  	position:   relative;   
-	min-height: 300px; /* This part sucks */
-	clear: 		both;
-	margin: 	25px 0;
 }
 #exec-content {
 	background-color: white;
