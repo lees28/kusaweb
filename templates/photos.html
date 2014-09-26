@@ -6,9 +6,33 @@
 				<h1> Photos </h1>
 			</div>
 		    <div class="section-content">
-		    	<table class="photo-table">
-		    		<!-- row 1 -->
+		    	
+		    	<table class="photo-table" id="photo-page-1">
 		    		<tr>
+		    			<td>
+		    				<a class="fancybox" rel="group" href="#bowling-2014">
+		    					<div class="title-img">
+		    						<img src="{{ STATIC_URL }}images/bowling.jpg" >
+		    					</div>
+		    					<h4>Bowling Night</h4>
+		    				</a>
+		    			</td>
+		    			<td>
+		    				<a class="fancybox" rel="group" href="#chuseok-2014">
+		    					<div class="title-img">
+		    						<img src="{{ STATIC_URL }}images/chuseok.jpg"  >
+		    					</div>
+		    					<h4>Chuseok Celebration 2014</h4>
+		    				</a>
+		    			</td>
+		    			<td>
+		    				<a class="fancybox" rel="group" href="#kickoff-2014">
+		    					<div class="title-img">
+		    						<img src="{{ STATIC_URL }}images/kickoff.jpg" >
+		    					</div>
+		    					<h4>KUSA Kickoff 2014</h4>
+		    				</a>
+		    			</td>
 		    			<td>
 		    				<a class="fancybox" rel="group" href="#Career">
 						    	<div class="title-img">
@@ -17,6 +41,40 @@
 					    		<h4>KSEA GBM/Career Night</h4>
 						    </a>						    
 		    			</td>
+		    		</tr>
+		    		<tr>
+		    			
+		    			<td>
+		    				<a class="fancybox" rel="group" href="#horse">
+						    	<div class="title-img">
+						    		<img src="{{ STATIC_URL }}images/year_horse.jpg" >
+						    	</div>
+					    		<h4>Year of the Horse</h4>
+						    </a>
+		    			</td>
+		    			<td>
+		    				<a class="fancybox" rel="group" href="#SNL">
+						    	<div class="title-img">
+						    		<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1390719_535952546488608_256787894_n.jpg?oh=e2e97980ac8fedf13434c3b067d95878&oe=545B12F3&__gda__=1416882450_dca330f6acfed00ce4b86ae7380621e9" >
+						    	</div>		    	
+					    		<h4>Korea Night - SNL</h4>
+						    </a>
+		    			</td>
+		    			<td>
+		    				<a class="fancybox" rel="group" href="#BBQ">
+						    	<div class="title-img">
+						    		<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/p417x417/1238923_516209258462937_367274963_n.jpg?oh=b8d27a5f1cc3a69449564e4469ee2182&oe=546CF751&__gda__=1417417149_50a2c11b99e12d9979f873ae58c91e2e" >
+						    		<h4>Chuseok Festival BBQ 2013</h4>
+						    	</div>
+						    </a>
+		    			</td>
+		    		</tr>
+		    	</table>
+
+		    	<!-- Page 2 if more photos are added -->
+		    	<!-- <table class="photo-table" style="display:none" id="photo-page-2">
+		    		<tr>
+		    			
 		    			<td>
 		    				<a class="fancybox" rel="group" href="#horse">
 						    	<div class="title-img">
@@ -42,13 +100,67 @@
 						    </a>
 		    			</td>
 		    		</tr>
-		    		<!-- row 2 -->
-		    	</table>
+		    	</table> -->
+		    	<!-- Pagination later when there are more photos -->
+		    	<!-- <ul class="pagination" id="photo-pagination"> -->
+				  	<!-- <li class="disabled" id="prev-photo-page">  <a href="#">&laquo;</a> </li> -->
+				  	<!-- <li class="active" id="photo-page-1"> 	 	<a href="#">1 </a>		</li>
+				  	<li id="photo-page-2">					 	<a href="#">2</a>		</li> -->
+					<!-- <li id="next-photo-page">					<a href="#">&raquo;</a> </li> -->
+				<!-- </ul> -->
+			</div>
+		</div>
+
+
+		<div style="display:none">
+			<div id="bowling-2014">
+				<div class="gallery" id="gallery1">
+					<img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10385404_698465513570643_8301184195025772577_n.jpg?oh=47ad5f7ea0164f4da899c5c9f189808f&oe=54872F37" >
+					<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10306389_698465516903976_5898471932326019719_n.jpg?oh=f5e5313c62102be54a58a7d89bb1cbd3&oe=54C110A8&__gda__=1417880692_c544d7aab1d3281ba440b49071237bf8" >
+					<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1969275_698465510237310_6257002879426112090_n.jpg?oh=c3bae6917dd6857330190a7d045a5d91&oe=54C9E982&__gda__=1422176793_2a548f52ea671cad4803e0ad9147d688" >
+					<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/68955_698465610237300_994381776142988520_n.jpg?oh=38783bcc5580e97275135085a58cd0be&oe=54C29835&__gda__=1422276076_512fdbd8d546de4ff2e84e428a3193d4" >
+					<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10689953_698465656903962_3364452061005008082_n.jpg?oh=712ac885367b0566acd1e0d0fe7e6234&oe=5486044F&__gda__=1422066935_833fea3522f73eb73527e61c9659a62d" >
+					<img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/1910184_698465733570621_7037994423616356416_n.jpg?oh=8d21ba8c9613c70c8bed4439b4d20bca&oe=54C8F2C2&__gda__=1421514755_03036ca68ef21eb6fc8c4a6036d76429" >
+					<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10247440_698465793570615_2422381705447557448_n.jpg?oh=97b470d9ba93fac6a9d661022eb34653&oe=54C4E17F&__gda__=1418125219_7ae79450fe49b9bc8fafdc002edd53eb" >
+					<img src="https://scontent-a-iad.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10649620_698465880237273_8449108380150541717_n.jpg?oh=74bb57efb7ea10d78320252f2a31f753&oe=5488D3A1" >
+					<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/1013826_698465950237266_3986836196916516569_n.jpg?oh=1271b09deda4e9b85ab362011bccfc28&oe=548B3CD0&__gda__=1418679789_4222806854d40e270be70b70bf8274f8" >
+					<img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1655960_698466290237232_6896173734397448171_n.jpg?oh=4726ccb6de7986bbcc5e2ce90dc9c467&oe=548AD9E2" >
+					<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10645104_698466296903898_479169284666024968_n.jpg?oh=cbf27c1efcb20a622ee07586376d6be9&oe=54BA8F6F&__gda__=1422395942_128bf76e491f9d08982d916bb5c0e267" >
+					<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10622946_698466340237227_7559838430628187975_n.jpg?oh=d531b5fd4941eb95bc8de8edbcc123ea&oe=54C40FE4&__gda__=1418256476_56551eed9d7b866ccf137c00d30356fd" >
+				</div>
+			</div>
+		</div>
+		<div style="display:none">
+			<div id="chuseok-2014">
+				<div class="gallery" id="gallery2">
+					<img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/997061_693988170685044_8324053042147533838_n.jpg?oh=988bfe4840fa397a42e0a3ab9c2465dd&oe=54C652B3">
+					<img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/10383483_693988174018377_7276721224336100936_n.jpg?oh=ea4cddd3fe238724fbf3e48cd0f520fd&oe=548702B7&__gda__=1422963841_d745b707ff0888110129e5eaf8dd0aa8">
+					<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/10557343_693988264018368_4686172903175575509_n.jpg?oh=1c6ff741d516e9977825614a7dee23a3&oe=5482BD23&__gda__=1418683282_720f4838e3a8bdfb488393e78f511a52" >
+					<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10482528_693988240685037_9111307341489072343_n.jpg?oh=59fad622e18170b00d649194c135551e&oe=54CB1ACC&__gda__=1418159220_36a65e26c0fd9d3bff1e26ed7c75249f">
+					<img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10590666_693988300685031_1784199683192958169_n.jpg?oh=57e5d040553a7d2205902f6db6686f53&oe=54D0EBB4">
+					<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10641303_693988387351689_732420647895837032_n.jpg?oh=d8904726d8305c07917b140bd2564883&oe=54C0F670&__gda__=1422078777_6b16448170c63be02b45bcd0a716ed98">
+					<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/10703903_693988390685022_8175764281850002923_n.jpg?oh=b87cd6455b2317136eb1fd5c10352682&oe=54BF9E17&__gda__=1418093734_d73b76603bf99af69c34df02f1609255">
+					<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10660285_693988420685019_2728809651950719772_n.jpg?oh=90dc9d90c804d05dabc1a834072e12b8&oe=54C166D8&__gda__=1418688352_aba81a086bf72a8eda4cadbb66904cc5">
+					<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10557298_693988454018349_613313932007748380_n.jpg?oh=6959b9de2f03ac8f96aeb84a16d8b713&oe=5485E4C1&__gda__=1422920794_2a3e0c73683832bcb178294fcc622ccd">
+					<img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10636206_693988497351678_6084928343307406472_n.jpg?oh=d86485f6eadff26ba831fec421b8cdfe&oe=54BFBED3&__gda__=1418554895_d8d3de7ee3cc6f551fd957bbe893fb22">
+					<img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10689861_693988614018333_1667542155041911270_n.jpg?oh=aae9790c5c591b4737030d04f4cc85bd&oe=54BE4B0E&__gda__=1421429970_63f4593dda3d86c01ada773ae1c29bac">
+					<img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10702164_693988620684999_1846759151227454475_n.jpg?oh=2a6433b77b218695bc8e792b63b50e43&oe=548AB223&__gda__=1421710335_737eb16f78a89e0b39948c3909134c90">
+					<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10647090_693988167351711_8517423347774021816_n.jpg?oh=8a0f297573f7717dc95f0005f645d83e&oe=54855C3A&__gda__=1421616770_7963330c24c3ad101174c3efc624af23">
+				</div>
+			</div>
+		</div>
+		<div style="display:none">
+			<div id="kickoff-2014">
+				<div class="gallery" id="gallery3">
+				<img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10645330_10153156614114488_1695784841970772361_n.jpg?oh=8229ba2490ee2ec332d8680a4be4b127&oe=548A0CA3&__gda__=1422536373_6ba5401dc060595ba4bab408985df43f">
+				<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpa1/v/t34.0-12/10668487_10204903204727905_1042631016_n.jpg?oh=c64c40cc1b47e876c3421abe1e76780c&oe=5427D527&__gda__=1411828682_1d5f7cb54e86056005b16d2bc72997b4">
+				<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpf1/v/t34.0-12/10695089_10204903204887909_1985631302_n.jpg?oh=b2ffc6fdcad3fea7260c529868b5fd25&oe=5427D081&__gda__=1411844112_f903badfbed1fa702731d9e60f8bb44a">
+				</div>
 			</div>
 		</div>
 		<div style="display:none">
 			<div id="Career">
-				<div class="gallery" id="gallery1">
+				<div class="gallery" id="gallery4">
 					<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/1509830_608903779193484_723407919_n.jpg">
 					<img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10150614_608903772526818_1728878078_n.jpg">
 					<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10150658_608903929193469_311390140_n.jpg?oh=726ac99d4363e378b006b11068446db0&oe=54669928&__gda__=1416154503_abe29ca8a718e33d5dc658384fe5ddda">
@@ -63,7 +175,7 @@
 		</div>
 		<div style="display:none">
 			<div id="horse">
-				<div class="gallery" id="gallery2">
+				<div class="gallery" id="gallery5">
 					<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xpf1/t1.0-9/1800339_588263244590871_1471171126_n.jpg">
 					<img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/1911788_588263271257535_1532979236_n.jpg">
 					<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/1798194_588263157924213_1617561193_n.jpg">
@@ -76,7 +188,7 @@
 		</div>
 		<div style="display:none">
 			<div id="SNL"> 
-				<div class="gallery" id="gallery3">				
+				<div class="gallery" id="gallery6">				
 					<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1456695_542649682485561_1759024476_n.jpg?oh=d90ae768abd4fd2ed2ff782225640887&oe=546B11EA&__gda__=1416513349_7bbad8df324d92543704e9105771b1ed">
 					<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-xfp1/t1.0-9/1468794_542649599152236_648908827_n.jpg">
 					<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/1470315_542649772485552_1378419564_n.jpg">
@@ -96,7 +208,7 @@
 		</div>
 		<div style="display:none">
 			<div id="BBQ">
-				<div class="gallery" id="gallery4">
+				<div class="gallery" id="gallery7">
 					<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xap1/t1.0-9/1239661_516208171796379_850692583_n.jpg">
 					<img src="https://scontent-b-sea.xx.fbcdn.net/hphotos-frc3/t1.0-9/1233493_516208175129712_1593840193_n.jpg">
 					<img src="https://scontent-a-sea.xx.fbcdn.net/hphotos-xpa1/t1.0-9/563585_516208168463046_1545374843_n.jpg">

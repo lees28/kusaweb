@@ -52,6 +52,7 @@ p {
 .section-title {
 	padding-top:10px;
 	height:100px;	
+	padding-bottom:100px;
 }
 .section-content {
 	padding-top:20px;	
@@ -339,12 +340,52 @@ p {
 #exec-content table th {
 	padding-left:20px;
 }
-#photos {
+
+#events {
 	background-image: url("../images/witewall_3.png");
-	height: 400px;
+	height: 900px;
 	margin: 0 auto;	
 }
+#events h1 {
+	border-bottom: 4px solid #B4B4B4;
+}
+#events h2 {
+	margin-top:5px;
+}
+#events h4 {
+	margin-top:0px;
+	margin-bottom:20px;
+}
+#events table {
+	width:100%;
+}
+#events table td {
+	height:200px;
+	padding-bottom:50px;
+}
+#events table img {
+	height:280px;
+	width:220px;
+}
+#events .event-image {
+	width:30%;
+	padding-left:50px;
+}
+#events .event-desc {
+	width:65%;
+	vertical-align: 0;
+	float:left;
+	padding-right:50px;
+	padding-left:20px;
+}
 
+#photos {
+	height: 630px;
+	margin: 0 auto;	
+}
+#photos .section-title {
+	padding-bottom:100px;
+}
 #photos h1 {
 	border-bottom: 4px solid #B4B4B4;
 }
@@ -356,20 +397,16 @@ p {
 }
 #photos table td {
 	height:210px;
+	padding-bottom:30px;
 }
 #photos table td a {
 	text-align: center;
 	text-decoration: none;
 }
 #photos .photo-desc {
-	text-align: center;
-	background-color:lightblue;
-	border: 5px solid #C5C5C5;
-	width:175px;
-	height:175px;
-	position:relative;
-	margin:0 auto;
-	display:none;
+	padding-top: 30px;
+	padding-left: 30px;
+	vertical-align: 0;
 }
 #photos h4 {
 	position:relative;
@@ -380,7 +417,6 @@ p {
 	height:175px;
 	border: 5px solid #C5C5C5;
 }
-
 .gallery { 
 	width: 800px;
 	height: 450px;
@@ -389,8 +425,7 @@ p {
 	margin:auto;
 }
 
-#calendar {
-	/*background-color:#C7C7C7;*/
+/*#calendar {
 	height: 700px;
 	margin: 0 auto;	
 }
@@ -404,8 +439,7 @@ p {
 #calendar iframe {
 	width:90%;
 	height:70%;
-}
-
+}*/
 
 #contact {
 	/*background-color:#FFFFFF;*/
@@ -413,7 +447,6 @@ p {
 	margin: 0 auto;	
 	background-image:url("../images/witewall_3.png");
 }
-
 #contact h1 {
 	border-bottom: 4px solid #B4B4B4;
 }

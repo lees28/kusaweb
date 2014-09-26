@@ -55,12 +55,16 @@
 	{% include "exec.html" %}
 {% endblock %}
 
+{% block events %}
+	{% include "events.html" %}
+{% endblock %}
+
 {% block photo %}
 	{% include "photos.html" %}
 {% endblock %}
 
 {% block calendar %}
-<div id="calendar">
+<!-- <div id="calendar">
 	<div class="section-container">
 		<div class="narrower-container">
 			<div class="section-title">
@@ -71,7 +75,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 {% endblock %}
 
 {% block contact %}

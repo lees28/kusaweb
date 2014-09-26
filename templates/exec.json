@@ -19,23 +19,15 @@
 	],
 	"Vice-President": [
 		{
-			"Name": "Sooryun Park",
+			"Name": "Sooryoun Park",
 			"Major": ["Economics", "International Comparative Studies"],
 			"Class": 2015,
 			"Hometown": "Suncheon, South Korea",
 			"Photo": "/static/photos/sooryun.png",
-			"Email": ""
+			"Email": "sp196@duke.edu"
 		}
 	],
 	"VP-Academic": [
-		{
-			"Name": "YJ Yang",
-			"Class": 2016,
-			"Major": ["Computer Science", "Math"],
-			"Hometown": "Seoul, South Korea",
-			"Photo": "/static/photos/YJ.png",
-			"Email": ""
-		},
 		{
 			"Name": "Bryan Kim",
 			"Major": ["Public Policy"],
@@ -70,7 +62,7 @@
 			"Class": 2017,
 			"Hometown": "Suwon, South Korea",
 			"Photo": "/static/photos/diane.png",
-			"Email": ""
+			"Email": "dk147@duke.edu"
 		}
 	],
 	"VP-Social": [
@@ -79,8 +71,8 @@
 			"Major": ["Economics"],
 			"Class": 2016,
 			"Hometown": "Ilsan, South Korea",
-			"Photo": "",
-			"Email": ""
+			"Photo": "/static/photos/seowoo.jpg",
+			"Email": "brian.koh@duke.edu"
 		},
 		{
 			"Name": "Julie Kim",

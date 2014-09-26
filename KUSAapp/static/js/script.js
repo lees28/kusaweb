@@ -101,11 +101,62 @@ $(document).ready(function() {
 		$(this).tab('show')
 	});
 
+//----------------------Events-----------------------//
+	$("#event-pagination li").click(function (e) {
+		e.preventDefault();
+
+		// currently activated page
+		var activeID = '#' + $('#event-pagination .active').attr('id');
+		$(activeID).css({'display': 'none'});
+		$('#event-pagination li').removeClass('active');
+
+		// id of next page
+		id = '#' + $(this).attr('id');	
+		$(id).css({'display': 'block'});
+		$(this).addClass('active');
+
+		// change which page in the pagination bar is active
+		// $('#prev-photo-page').removeClass('disabled');
+		// $('#next-photo-page').removeClass('disabled');
+		// if(id == '#photo-page-1') {
+		// 	$('#prev-photo-page').addClass('disabled');
+		// } else if(id == '#photo-page-2') {
+		// 	$('#next-photo-page').addClass('disabled');
+		// } 
+	});
+
 //------------------ Photo gallery-------------------//
+
+
+	// photo pagination
+	$("#photo-pagination li").click(function (e) {
+		e.preventDefault();
+
+		// currently activated page
+		var activeID = '#' + $('#photo-pagination .active').attr('id');
+		$(activeID).css({'display': 'none'});
+		$('#photo-pagination li').removeClass('active');
+
+		// id of next page
+		id = '#' + $(this).attr('id');	
+		$(id).css({'display': 'block'});
+		$(this).addClass('active');
+
+		// change which page in the pagination bar is active
+		// $('#prev-photo-page').removeClass('disabled');
+		// $('#next-photo-page').removeClass('disabled');
+		// if(id == '#photo-page-1') {
+		// 	$('#prev-photo-page').addClass('disabled');
+		// } else if(id == '#photo-page-2') {
+		// 	$('#next-photo-page').addClass('disabled');
+		// } 
+	});
 
 	// lightbox for photos
 	$(".fancybox").fancybox({
+		modal: true,
 		arrows: false,
+		closeBtn : true,
 		keys: {
 			next: null,
 			prev: null,
@@ -118,18 +169,25 @@ $(document).ready(function() {
 	            }
 	        },
 	        title : null
+	    },
+	    afterShow : function() {
+	        $('.fancybox-skin').append('<a title="Close" class="fancybox-item fancybox-close" href="javascript:jQuery.fancybox.close();"></a>');
 	    }
 	});
 	
 	// Galleria photo slideshow
 	Galleria.loadTheme('/static/galleria/themes/classic/galleria.classic.min.js');
+	Galleria.ready(function() {
+	    this.attachKeyboard({
+	        left: this.prev,
+	        right: this.next,
+	        13: function() {
+		        // start playing when return (keyCode 13) is pressed:
+		        this.play(3000);
+		    }
+	    });
+	});
 	$(".fancybox").click(function() {
-		Galleria.ready(function() {
-			this.attachKeyboard({
-				left: this.prev,
-				right: this.prev
-			});
-		});
 		var title = $(this).attr('href');
 		var gallery = "#" + $(title).children().first().attr('id');
 		Galleria.run(gallery);	

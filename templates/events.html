@@ -1,0 +1,70 @@
+{% block events %}
+<div id="events">
+	<div class="section-container">
+		<div class="narrower-container">
+			<div class="section-title">
+				<h1> Events </h1>
+			</div>
+			<div class="section-content">
+				<table class="events-table" id="event-page-1">
+		    		<tr>
+		    			<td class="event-image">
+							<img src="{{ STATIC_URL }}images/events/bowling.jpg" >
+		    			</td>
+		    			<td class="event-desc">
+		    				<h2><strong>Bowling Night</strong></h2>
+		    				<h4>September 25, 2014, 9PM at AMF Durham Lanes</h4>
+		    				<p>
+		    					Come out to go bowling with us and KSEA (Korean-American Scientists & Engineers Association)! All majors and those undeclared are welcome. Don't drop the ball by missing out on this!<br><br>
+
+								- Bring $5 (Drivers will be covered)<br>
+								- Rides will be provided to the bowling place<br>
+								- All groups should arrive at the bowling place by 9PM
+		    				</p>
+		    			</td>
+		    		</tr>
+		    		<tr>
+		    			<td class="event-image">
+							<img src="{{ STATIC_URL }}images/events/chuseok.jpg" >
+		    			</td>
+		    			<td class="event-desc">
+		    				<h2><strong>Chuseok Festival</strong></h2>
+		    				<h4>September 13, 2014, 2PM at Keohane Atrium</h4>
+		    				<p>
+		    					KUSA and DKSA(Duke Korean Student Association for graduate school students) are going to celebrate Korean national holiday Chuseok! We will be having Korean traditional foods like Jeon and Songpyeon. We also have prepared some icebreaker games too!<br><br>
+
+								It will be a great opportunity to celebrate one of the most celebrated holidays in Korea with KUSA, as well as to network with grad students of DKSA. Hope to see you there!
+		    				</p>
+		    			</td>
+		    		</tr>
+		    	</table>
+		    	<table class="events-table" id="event-page-2" style="display:none">
+		    		<tr>
+		    			<td class="event-image">
+							<img src="{{ STATIC_URL }}images/events/kickoff.jpg" >
+		    			</td>
+		    			<td class="event-desc">
+		    				<h2><strong>KUSA Kickoff Event</strong></h2>
+		    				<h4>September 6, 2014, 1:30PM at GA Down Under</h4>
+		    				<p>
+		    					Welcome back! Come out to KUSA’s first event of the year to meet the other members of the Duke Korean community and check out what the exec board has planned for the year! Here are a couple reasons why you won’t want to miss out:<br><br>
+
+								1.	FREE KOREAN FOOD (bibimbap catered by Mixed)<br>
+								2.	Team Competitions for Prizes<br>
+								3.	Raffle Drawing for Amazon Gift Cards (up to $50)
+		    				</p>
+		    			</td>
+		    		</tr>
+		    	</table>
+				<!-- Pagination -->
+		    	<ul class="pagination" id="event-pagination">
+				  	<!-- <li class="disabled" id="prev-photo-page">  <a href="#">&laquo;</a> </li> -->
+				  	<li class="active" id="event-page-1"> 	 	<a href="#">1 </a>		</li>
+				  	<li id="event-page-2">					 	<a href="#">2 </a>		</li>
+					<!-- <li id="next-photo-page">					<a href="#">&raquo;</a> </li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
