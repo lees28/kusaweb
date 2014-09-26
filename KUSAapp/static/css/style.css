@@ -312,7 +312,7 @@ p {
 	border-bottom: 4px solid #B4B4B4;
 }
 #exec h5 {
-	/*font-size:14px;*/
+	font-size:15px;
 }
 #exec p {
 	margin: 0 auto;
@@ -366,11 +366,10 @@ p {
 	padding-left:50px;
 }
 #events .event-desc {
-	width:65%;
 	vertical-align: 0;
 	float:left;
 	padding-right:50px;
-	padding-left:20px;
+	padding-left:30px;
 }
 
 #photos {
