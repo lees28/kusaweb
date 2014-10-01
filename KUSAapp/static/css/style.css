@@ -312,7 +312,7 @@ p {
 	border-bottom: 4px solid #B4B4B4;
 }
 #exec h5 {
-	font-size:15px;
+	font-size:13px;
 }
 #exec p {
 	margin: 0 auto;
@@ -320,6 +320,12 @@ p {
 #exec img {
 	width:96px; 
 	height:128px;
+}
+#exec #exec-tab {
+	width:100%;
+}
+#exec #exec-tab li {
+	width:12.5%;
 }
 #exec-content {
 	background-color: white;
