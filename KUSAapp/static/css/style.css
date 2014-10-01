@@ -327,12 +327,16 @@ p {
 #exec #exec-tab li {
 	width:12.5%;
 }
+#exec #exec-tab a {
+	padding:3px;
+}
 #exec-content {
 	background-color: white;
 }
 #exec-content table {
 	margin-left:20px;
 	margin-bottom:30px;
+	margin-top:10px;
 }
 #exec-content table td {
 	padding-left:20px;
