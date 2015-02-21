@@ -17,16 +17,6 @@
 			"Email": "jun.yoon77@gmail.com"
 		}
 	],
-	"Vice-President": [
-		{
-			"Name": "Sooryoun Park",
-			"Major": ["Economics", "International Comparative Studies"],
-			"Class": 2015,
-			"Hometown": "Suncheon, South Korea",
-			"Photo": "/static/photos/sooryun.png",
-			"Email": "sp196@duke.edu"
-		}
-	],
 	"VP-Academic": [
 		{
 			"Name": "Bryan Kim",
@@ -101,6 +91,24 @@
 			"Hometown": "Vancouver, Canada",
 			"Photo": "/static/photos/alex.png",
 			"Email": "ss456@duke.edu"
+		}
+	],
+	"Freshmen Reps": [
+		{
+			"Name": "Tim Jung",
+			"Major": ["International Comparative Studies"],
+			"Class": 2018,
+			"Hometown": "Gyeonggi-do, South Korea",
+			"Photo": "/static/photos/tim.jpg",
+			"Email": "tim.jung@duke.edu"
+		},
+		{
+			"Name": "Jee Yoon",
+			"Major": ["Economics"],
+			"Class": 2018,
+			"Hometown": "Gyeonggi-do, South Korea",
+			"Photo": "/static/photos/jee.jpg",
+			"Email": "jy153@duke.edu"
 		}
 	]
 }
