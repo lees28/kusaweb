@@ -23,13 +23,18 @@
 					<!--Then the rest-->
 					{% for position, members in execs.iteritems %}
 						{% if position != 'Co-Presidents' and position != 'Vice-President'%}
-							{% if position != 'Treasurer' and position != 'Webmaster' %}
+							{% if position != 'Treasurer' and position != 'Webmaster' and position != 'Freshmen-Reps'%}
 								<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
 							{% endif %}
 						{% endif %}
 					{% endfor %}
 					{% for position, members in execs.iteritems %}
 						{% if position == 'Treasurer' or position == 'Webmaster'%}
+							<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
+						{% endif %}
+					{% endfor %}
+					{% for position, members in execs.iteritems %}
+						{% if position == 'Freshmen-Reps' %}
 							<li><a href="#{{position}}" role="tab" data-toggle="tab"><h5>{{position}}</h5></a></li>
 						{% endif %}
 					{% endfor %}
