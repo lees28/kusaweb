@@ -9,73 +9,23 @@
 		    	
 		    	<table class="photo-table" id="photo-page-1">
 		    		<tr>
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#bbq-2014">
-		    					<div class="title-img">
-		    						<img src="{{ STATIC_URL }}images/bbq.jpg" >
-		    					</div>
-		    					<h4>Korean BBQ - 2014</h4>
-		    				</a>
-		    			</td>
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#bowling-2014">
-		    					<div class="title-img">
-		    						<img src="{{ STATIC_URL }}images/bowling.jpg" >
-		    					</div>
-		    					<h4>Bowling Night</h4>
-		    				</a>
-		    			</td>
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#chuseok-2014">
-		    					<div class="title-img">
-		    						<img src="{{ STATIC_URL }}images/chuseok.jpg"  >
-		    					</div>
-		    					<h4>Chuseok Celebration 2014</h4>
-		    				</a>
-		    			</td>
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#kickoff-2014">
-		    					<div class="title-img">
-		    						<img src="{{ STATIC_URL }}images/kickoff.jpg" >
-		    					</div>
-		    					<h4>KUSA Kickoff 2014</h4>
-		    				</a>
-		    			</td>
-		    		</tr>
-		    		<tr>
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#Career">
-						    	<div class="title-img">
-						    		<img src="{{ STATIC_URL }}images/career.jpg" >
-						    	</div>
-					    		<h4>KSEA GBM/Career Night</h4>
-						    </a>						    
-		    			</td>
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#horse">
-						    	<div class="title-img">
-						    		<img src="{{ STATIC_URL }}images/year_horse.jpg" >
-						    	</div>
-					    		<h4>Year of the Horse</h4>
-						    </a>
-		    			</td>
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#SNL">
-						    	<div class="title-img">
-						    		<img src="{{ STATIC_URL }}images/snl.jpg" >
-						    	</div>		    	
-					    		<h4>Korea Night - SNL</h4>
-						    </a>
-		    			</td>
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#BBQ">
-						    	<div class="title-img">
-						    		<img src="{{ STATIC_URL }}images/chuseok2013.jpg" >
-						    		<h4>Chuseok Festival BBQ 2013</h4>
-						    	</div>
-						    </a>
-		    			</td>
-		    		</tr>
+						{% for filename in filenames %}
+							{% if forloop.counter == 5 %}
+			    			<tr>
+							{% endif %}
+							<td>
+			    				<a class="fancybox" rel="group" href="#{{forloop.counter}}">
+			    					<div class="title-img">
+			    						<img src="{{ STATIC_URL }}images/{{filename}}.jpg" >
+			    					</div>
+			    					<h4>{{filename}}</h4>
+			    				</a>
+			    			</td>
+			    			{% if forloop.counter == 4 %}
+			    			</tr>
+							{% endif %}
+						{% endfor %}
+					</tr>
 		    	</table>
 
 		    	<!-- Page 2 if more photos are added -->
@@ -109,88 +59,27 @@
 		    		</tr>
 		    	</table> -->
 		    	<!-- Pagination later when there are more photos -->
-		    	<!-- <ul class="pagination" id="photo-pagination"> -->
+		    	<ul class="pagination" id="photo-pagination">
 				  	<!-- <li class="disabled" id="prev-photo-page">  <a href="#">&laquo;</a> </li> -->
-				  	<!-- <li class="active" id="photo-page-1"> 	 	<a href="#">1 </a>		</li>
-				  	<li id="photo-page-2">					 	<a href="#">2</a>		</li> -->
+				  	<li class="active" id="photo-page-1"> 	 	<a href="#">1 </a>		</li>
+				  	<li id="photo-page-2">					 	<a href="#">2</a>		</li>
 					<!-- <li id="next-photo-page">					<a href="#">&raquo;</a> </li> -->
 				<!-- </ul> -->
 			</div>
 		</div>
 
-
+		{% for url_file in photo_urls %}
 		<div style="display:none">
-			<div id="bbq-2014">
-				<div class="gallery" id="gallery8">
-					{% for url in photo_urls.bbq2014 %}
+			<div id="{{forloop.counter}}">
+				<div class="gallery" id="gallery{{forloop.counter}}">
+					{% for url in url_file %}
 						<img src="{{url}}" >
 					{% endfor %}
 				</div>
 			</div>
 		</div>
-		<div style="display:none">
-			<div id="bowling-2014">
-				<div class="gallery" id="gallery7">
-					{% for url in photo_urls.bowling %}
-						<img src="{{url}}" >
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-		<div style="display:none">
-			<div id="chuseok-2014">
-				<div class="gallery" id="gallery6">
-					{% for url in photo_urls.chuseok2014 %}
-						<img src="{{url}}" >
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-		<div style="display:none">
-			<div id="kickoff-2014">
-				<div class="gallery" id="gallery5">
-					{% for url in photo_urls.kickoff2014 %}
-						<img src="{{url}}" >
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-		<div style="display:none">
-			<div id="Career">
-				<div class="gallery" id="gallery4">
-					{% for url in photo_urls.career %}
-						<img src="{{url}}" >
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-		<div style="display:none">
-			<div id="horse">
-				<div class="gallery" id="gallery3">
-					{% for url in photo_urls.horse %}
-						<img src="{{url}}" >
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-		<div style="display:none">
-			<div id="SNL"> 
-				<div class="gallery" id="gallery2">				
-					{% for url in photo_urls.snl %}
-						<img src="{{url}}" >
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-		<div style="display:none">
-			<div id="BBQ">
-				<div class="gallery" id="gallery1">
-					{% for url in photo_urls.chuseok2013 %}
-						<img src="{{url}}" >
-					{% endfor %}
-				</div>
-			</div>
-		</div>
+		{% endfor %}
+		
 	</div>
 </div>
 {% endblock %}
