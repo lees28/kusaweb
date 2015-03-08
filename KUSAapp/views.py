@@ -12,13 +12,15 @@ def homepage(request):
     with open("templates/exec.json") as json_file:
         execs = json.load(json_file)
 
-        photo_urls = {}
+        photo_urls = []
         lines = []
-        for filename in os.listdir("KUSAapp/static/photo_urls"):
-            lines = [line.strip() for line in open("KUSAapp/static/photo_urls/" + filename)]
-            photo_urls[filename] = lines
-        photo_urls_len = len(photo_urls)
-        return render(request, 'english.html', {"execs":execs, "photo_urls":photo_urls, "photo_urls_len":photo_urls_len})
+        filenames = ["KoreanLunarNewYear2015", "SaveMySeoul", "BBQ2014", "BowlingNight", "Chuseok2014", 
+                     "Kickoff2014", "CareerNight", "YearOfTheHorse", "KoreaNight-SNL", "Chuseok2013"]
+        base_dir = "KUSAapp/static/photo_urls/"
+        for filename in filenames:
+            lines = [line.strip() for line in open(base_dir + filename)]
+            photo_urls.append(lines)
+        return render(request, 'english.html', {"execs":execs, "photo_urls":photo_urls, "filenames":filenames})
 
 def contact(request):
     send_mail(

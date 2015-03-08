@@ -7,12 +7,23 @@
 			</div>
 		    <div class="section-content">
 		    	
-		    	<table class="photo-table" id="photo-page-1">
-		    		<tr>
 						{% for filename in filenames %}
-							{% if forloop.counter == 5 %}
+							{% if forloop.counter == 1 %}
+					    	<table class="photo-table" id="photo-page-1">
+		    				<tr>
+		    				{% endif %}
+
+		    				{% if forloop.counter == 9 %}
+		    				</tr>
+		    				</table>
+		    				<table class="photo-table" style="display:none" id="photo-page-2">
+		    				<tr>
+		    				{% endif %}
+		    				
+							{% if forloop.counter == 5 or forloop.counter == 13 %}
 			    			<tr>
 							{% endif %}
+
 							<td>
 			    				<a class="fancybox" rel="group" href="#{{forloop.counter}}">
 			    					<div class="title-img">
@@ -21,43 +32,15 @@
 			    					<h4>{{filename}}</h4>
 			    				</a>
 			    			</td>
-			    			{% if forloop.counter == 4 %}
+
+			    			{% if forloop.counter == 4 or forloop.counter == 12 %}
 			    			</tr>
 							{% endif %}
+							
 						{% endfor %}
 					</tr>
 		    	</table>
 
-		    	<!-- Page 2 if more photos are added -->
-		    	<!-- <table class="photo-table" style="display:none" id="photo-page-2">
-		    		<tr>
-		    			
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#horse">
-						    	<div class="title-img">
-						    		<img src="{{ STATIC_URL }}images/year_horse.jpg" >
-						    	</div>
-					    		<h4>Year of the Horse</h4>
-						    </a>
-		    			</td>
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#SNL">
-						    	<div class="title-img">
-						    		<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/1390719_535952546488608_256787894_n.jpg?oh=e2e97980ac8fedf13434c3b067d95878&oe=545B12F3&__gda__=1416882450_dca330f6acfed00ce4b86ae7380621e9" >
-						    	</div>		    	
-					    		<h4>Korea Night - SNL</h4>
-						    </a>
-		    			</td>
-		    			<td>
-		    				<a class="fancybox" rel="group" href="#BBQ">
-						    	<div class="title-img">
-						    		<img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/p417x417/1238923_516209258462937_367274963_n.jpg?oh=b8d27a5f1cc3a69449564e4469ee2182&oe=546CF751&__gda__=1417417149_50a2c11b99e12d9979f873ae58c91e2e" >
-						    		<h4>Chuseok Festival BBQ</h4>
-						    	</div>
-						    </a>
-		    			</td>
-		    		</tr>
-		    	</table> -->
 		    	<!-- Pagination later when there are more photos -->
 		    	<ul class="pagination" id="photo-pagination">
 				  	<!-- <li class="disabled" id="prev-photo-page">  <a href="#">&laquo;</a> </li> -->
