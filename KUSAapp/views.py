@@ -14,7 +14,7 @@ def homepage(request):
 
         photo_urls = []
         lines = []
-        filenames = ["KoreanLunarNewYear2015", "SaveMySeoul", "BBQ2014", "BowlingNight", "Chuseok2014", 
+        filenames = ["KoreaNight2015", "KoreanLunarNewYear2015", "SaveMySeoul", "BBQ2014", "BowlingNight", "Chuseok2014", 
                      "Kickoff2014", "CareerNight", "YearOfTheHorse", "KoreaNight-SNL", "Chuseok2013"]
         base_dir = "KUSAapp/static/photo_urls/"
         for filename in filenames:
