@@ -139,7 +139,7 @@ $(document).ready(function() {
 
 		// id of next page
 		id = '#' + $(this).attr('id');	
-		$(id).css({'display': 'block'});
+		$(id).css({'display': ''});
 		$(this).addClass('active');
 
 		// change which page in the pagination bar is active

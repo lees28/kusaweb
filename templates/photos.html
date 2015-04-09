@@ -7,39 +7,29 @@
 			</div>
 		    <div class="section-content">
 		    	
+		    		<table class="photo-table" id="photo-page-1">
 						{% for filename in filenames %}
-							{% if forloop.counter == 1 %}
-					    	<table class="photo-table" id="photo-page-1">
-		    				<tr>
-		    				{% endif %}
-
-		    				{% if forloop.counter == 9 %}
-		    				</tr>
-		    				</table>
-		    				<table class="photo-table" style="display:none" id="photo-page-2">
-		    				<tr>
-		    				{% endif %}
-		    				
-							{% if forloop.counter == 5 or forloop.counter == 13 %}
-			    			<tr>
+							{% if forloop.counter == 9 %}
+							</table>
+							<table class="photo-table" id="photo-page-2" style="display:none">							
 							{% endif %}
-
-							<td>
-			    				<a class="fancybox" rel="group" href="#{{forloop.counter}}">
-			    					<div class="title-img">
-			    						<img src="{{ STATIC_URL }}images/{{filename}}.jpg" >
-			    					</div>
-			    					<h4>{{filename}}</h4>
-			    				</a>
-			    			</td>
-
-			    			{% if forloop.counter == 4 or forloop.counter == 12 %}
-			    			</tr>
+							{% if forloop.counter == 1 or forloop.counter == 5 or forloop.counter == 9 or forloop.counter == 13 %}
+							<tr>
 							{% endif %}
-							
+								<td>
+				    				<a class="fancybox" rel="group" href="#{{forloop.counter}}">
+				    					<div class="title-img">
+				    						<img src="{{ STATIC_URL }}images/{{filename}}.jpg" >
+				    					</div>
+				    					<h4>{{filename}}</h4>
+				    				</a>
+				    			</td>
+				    		{% if forloop.counter == 4 or forloop.counter == 8 or forloop.counter == 12 or forloop.counter == 16 %}
+				    		</tr>
+				    		{% endif %}
 						{% endfor %}
-					</tr>
-		    	</table>
+							</tr>
+		    		</table>
 
 		    	<!-- Pagination later when there are more photos -->
 		    	<ul class="pagination" id="photo-pagination">
