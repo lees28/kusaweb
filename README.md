@@ -42,6 +42,11 @@ You will now be inside your virtualenv. Run the following command to install the
 $ pip install -r requirements.txt
 ```
 
+Then, issue the following command to collect local assets:
+```
+python manage.py collectstatic
+```
+
 The app is now ready to be run locally. Start the application by running <code>heroku local web</code>:
 ```
 $ heroku local web
@@ -60,10 +65,16 @@ pip install -r requirements.txt
 
 After making changes and testing your code, commit your code as usual (using <code>git add</code> and <code>git commit</code>). Then push the modified code to this git repo using <code>git push</code>. 
 
-To push to the heroku server, make sure you are authorized (i.e. you are a collaborator for this heroku app.) Then, issue the following command
+To push to the heroku server, make sure you are authorized (i.e. you are a collaborator for this heroku app, dukekusa) Then, issue the following command
 ```
 $ git push heroku master
 ```
 
-To see your changes that you've made, head over to www.dukekusa.com!
+If you get the following error: <code>fatal: 'heroku' does not appear to be a git repository</code> use the following command
+```
+$ heroku git:remote -a dukekusa
+```
+and then use <code>git push heroku master</code>
+
+To see your changes that you've made, enter <code>heroku open</code> or head over to www.dukekusa.com!
 
