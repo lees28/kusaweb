@@ -1,0 +1,537 @@
+/********************* * GLOBAL * *********************/
+
+/* All of the common stuff goes here under the appropriate sub headings */
+
+/* Heading formatting */
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+/* Text formatting */
+h1 {
+	font-family: 'Oswald', sans-serif;
+	padding-bottom:2px;
+	font-size:50px;
+	display:inline-block;
+}
+h4 {
+	font-size:15px;
+}
+h5 {
+	font-weight: bolder;
+	font-size:16px;
+}
+p {
+	font-size:20px;
+}
+/* Form formatting */
+
+/* Table formatting */
+
+/* etc */
+
+
+/********************* * LAYOUT * *********************/
+
+/* All the layout things go here under sub-headings */
+
+/* Container */
+#container {
+	margin: 	0 auto;
+	text-align: center;
+}
+.narrower-container {
+	width: 	950px;
+	height:	100%;
+	margin: 0 auto;
+}
+.section-container {
+	height:100%;
+}
+.section-title {
+	padding-top:10px;
+	height:100px;	
+	padding-bottom:100px;
+}
+.section-content {
+	padding-top:20px;	
+	clear:both;
+}
+
+
+/* Header */
+#header {
+	height:300px;
+	/*background-image:url("../images/halftone.png");*/
+}
+
+#topbar {
+	height:			  40px;	
+	background-image: url("../images/grey_wash_wall.png");
+}
+#topbar p {
+	padding-top: 6px;
+	font-size: 18px;
+	color: #B7B7B7;
+}
+#desc {
+	float: left;
+}
+#email {
+	float: right;
+}
+
+#logo {
+	height:			70%;
+	padding-top:	20px;
+	padding-bottom: 20px;
+}
+#logo img {
+	height:  100%;
+	width: 	 480px;
+	display: block;
+	margin:  0 auto;
+}
+#navbar {
+	height:		      50px;
+	width:			  100%;
+	border-top:       1px solid #EAEAEA;
+	/*border-bottom:    1px solid #EAEAEA;*/
+	background-image:url("../images/greyzz.png");
+	z-index: 		  10;
+}
+#nav-list {
+	width:		100%;
+	height:		100%;
+	margin-top:	8px;
+	padding:	0;
+	text-align: center;
+	font-weight:bold;
+}
+#nav-list li {
+	display:   inline-block;
+	width: 	   150px;
+	font-size: 21px;
+	margin: 0 10px;
+}
+#nav-list a {
+	text-decoration: none;
+	color:#6D6D6D;
+}
+#nav-list a:hover {
+	color:#A7A7A7;
+}
+.fixed {
+	position: fixed;
+	width:	  100%;
+	top:	  0;
+}
+
+
+/*** maininfo ***/
+#maininfo {
+	margin: 0 auto;
+}
+
+/* carousel */
+#carousel {
+	height:			  600px;
+}
+#carousel-and-nav {
+	height:  500px;
+	width:	 100%;	
+	/*padding: 40px 48px 10px 48px;*/
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    /*width:	  750px;
+    height:   420px;*/
+    width:100%;
+    height:600px;
+    margin:	  0 auto;
+    /*border:   5px solid grey;*/
+}
+.jcarousel ul {
+    width: 	  20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 	0;
+    padding: 	0;
+}
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    width:1296px;
+    color:white;
+}
+.jcarousel img {
+	width:100%;
+	height:100%;
+	/*opacity:0.85;*/
+}
+.carousel-title {
+	position: absolute;
+	font-size: 100px;
+}
+.carousel-desc {
+	position: absolute;
+}
+.carousel-desc p { 
+	font-size: 20px;
+}
+	#explore-title {
+		left:100px;
+		top:40px;
+	}
+	#explore-desc {
+		left:400px;
+		top:75px;
+	}
+	#explore-desc p {
+		float:left;
+		margin:0;
+		clear:both;
+	}
+	#learn-title {
+		top:400px;
+	}
+	#learn-desc {
+		top:435px;
+	}
+	#learn-desc p {
+		float:left;
+		margin:0;
+		clear:both;
+	}
+	#connect-title {
+		top:40px;
+	}
+	#connect-desc {
+		top:75px;
+	}
+	#connect-desc p {
+		float:left;
+		margin:0;
+		clear:both;
+	}
+
+
+#learn {
+	left:1510px;
+}
+#connect {
+	left:2250px;
+}
+.jcarousel img:hover {
+
+}
+
+#pagination {
+	height: 40px;
+	width:  100%;
+}
+.jcarousel-pagination {
+	width:  76px;
+	height: 100px;
+	margin: 0 auto;
+}
+.jcarousel-pagination a {
+	text-decoration: none;
+}
+.jcarousel-pagination img {
+	padding: 10px 3px;
+	width:   15px;
+	height:  15px;
+}
+.arrow {
+	margin-top: 235px;
+	padding:	7px;
+	height: 	40px;
+	width: 		40px;
+	float:		left;
+}
+.arrow:hover {
+	opacity: 0.5;
+}
+
+
+#about {
+	background-image: url("../images/grey_wash_wall.png");
+	height: 		  490px;
+	/*	*/
+}
+#about h1 {
+	border-bottom: 3px solid #B4B4B4;
+}
+#about p {
+	text-align: left;
+	font-size: 20px;
+	color:white;
+}
+#about-list {
+	width:22%;
+	display:inline-block;
+	float:left;
+	border-right: 1px solid #EAEAEA;
+	padding-right:30px;
+}
+#about-content {
+	width:74%;
+	padding-left:30px;
+	display:inline-block;
+}
+#about .about-sub-desc {
+	text-align: left;
+}
+#white-rectangle {
+	position:absolute;
+	margin:0 auto;
+	margin-top:60px;
+	clear:both;
+	width:40px;
+	background-color: #EAEAEA;
+	height:5px;
+}
+
+.fancybox-title-over-wrap {
+    width: 100%;
+    opacity: 0.7;
+    padding: 5px;
+}
+
+
+#exec {
+	height: 570px;
+	margin: 0 auto;	
+}
+#exec h1 {
+	border-bottom: 4px solid #B4B4B4;
+}
+#exec h5 {
+	font-size:13px;
+}
+#exec p {
+	margin: 0 auto;
+}
+#exec img {
+	width:96px; 
+	height:128px;
+}
+#exec #exec-tab {
+	width:100%;
+}
+#exec #exec-tab li {
+	width:12.5%;
+}
+#exec #exec-tab a {
+	padding:3px;
+}
+#exec-content {
+	background-color: white;
+}
+#exec-content table {
+	margin-left:20px;
+	margin-bottom:30px;
+	margin-top:10px;
+}
+#exec-content table td {
+	padding-left:20px;
+}
+#exec-content table th {
+	padding-left:20px;
+}
+
+#events {
+	background-image: url("../images/witewall_3.png");
+	height: 900px;
+	margin: 0 auto;	
+}
+#events h1 {
+	border-bottom: 4px solid #B4B4B4;
+}
+#events h2 {
+	margin-top:5px;
+}
+#events h4 {
+	margin-top:0px;
+	margin-bottom:20px;
+}
+#events table {
+	width:100%;
+}
+#events table td {
+	height:200px;
+	padding-bottom:50px;
+}
+#events table img {
+	height:280px;
+	width:220px;
+}
+#events .event-image {
+	width:30%;
+	padding-left:50px;
+}
+#events .event-desc {
+	vertical-align: 0;
+	float:left;
+	padding-right:50px;
+	padding-left:30px;
+}
+
+#photos {
+	height: 670px;
+	margin: 0 auto;	
+}
+#photos .section-title {
+	padding-bottom:100px;
+}
+#photos h1 {
+	border-bottom: 4px solid #B4B4B4;
+}
+#photos p {
+	text-align: left;
+}
+#photos table {
+	width:100%;
+}
+#photos table td {
+	height:210px;
+	padding-bottom:30px;
+}
+#photos table td a {
+	text-align: center;
+	text-decoration: none;
+}
+#photos .photo-desc {
+	padding-top: 30px;
+	padding-left: 30px;
+	vertical-align: 0;
+}
+#photos h4 {
+	position:relative;
+}
+
+#photos .title-img img {
+	width:175px; 
+	height:175px;
+	border: 5px solid #C5C5C5;
+}
+#photos .pagination {
+	margin-top:-10px;	
+}
+
+.gallery { 
+	width: 920px;
+	height: 550px;
+	background: #000;
+	clear:both;
+	margin:auto;
+}
+
+/*#calendar {
+	height: 700px;
+	margin: 0 auto;	
+}
+
+#calendar h1 {
+	border-bottom: 4px solid #B4B4B4;
+}
+#calendar p {
+	text-align: left;
+}
+#calendar iframe {
+	width:90%;
+	height:70%;
+}*/
+
+#contact {
+	/*background-color:#FFFFFF;*/
+	height: 600px;
+	margin: 0 auto;	
+	background-image:url("../images/witewall_3.png");
+}
+#contact h1 {
+	border-bottom: 4px solid #B4B4B4;
+}
+#contact p {
+	text-align: left;
+	margin-bottom:20px;
+
+}
+#contact td {
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+#contact td input {
+	width: 200px;
+}
+#contact #form-submit {
+	width:75px;
+}
+
+/* Footer */
+#footer {
+	height:120px;
+	width:100%;
+	background-image: url("../images/grey_wash_wall.png");
+	font-size:16px;
+}
+#footer-desc {
+	float:left;
+	color:lightgrey;
+	margin-top:10px;
+	display:inline-block;
+}
+#toTop {
+	/*height: 20px;
+	width: 20px;*/
+	margin-top:10px;
+	float:right;
+	display:inline-block;
+	font-size:20px;
+}
+#toTop a {
+	text-decoration: none;
+}
+
+/********************* * NAVIGATION * *********************/
+
+/* I put navigation separate to the layout as there can be a number of navigation points under their sub-headings */
+
+/* Main (horizontal) Navigation */
+
+/* Left Navigation */
+
+/* Right Navigation */
+
+/* Breadcrumb Navigation */
+
+/********************* * FORMS * *********************/
+
+/* Any form formatting that varies from the common formatting, if there are multiple differently formatted forms, then use sub-headings */
+
+/********************* * TABLES * *********************/
+
+/* Same deal as forms */
+
+/********************* * LISTS * *********************/
+
+/* Same deal as forms and tables */
+
+/********************* * CONTENT * *********************/
+
+/* Any specific formatting for particular pages, grouped by sub-headings for the page the same way as forms, tables and lists */
+
+/********************* * CSS SUPPORT * *********************/
+
+
+
+
+
+
+/* Exec */
+
