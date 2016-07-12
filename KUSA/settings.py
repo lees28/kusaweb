@@ -62,7 +62,7 @@ WSGI_APPLICATION = 'KUSA.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
+# https://docs.djangoproject.com/en/1.9/intro/tutorial02/
 
 DATABASES = {
     'default': {

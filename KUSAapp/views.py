@@ -28,7 +28,7 @@ def contact(request):
         request.POST['subject'],
         request.POST['message'],
         request.POST.get('email', 'noreply@simplesite.com'),
-        ['kusa.dukeu@gmail.com'], #email address where message is sent.
+        ['kusa.vandy@gmail.com'], #email address where message is sent.
         fail_silently=False
     )
     return HttpResponseRedirect('/')
