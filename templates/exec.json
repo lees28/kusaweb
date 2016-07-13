@@ -1,5 +1,5 @@
 {
-	"President": [
+	"Co-Presidents": [
 		{
 			"Name": "Doohee Lee",
 			"Class": 2017,
@@ -10,6 +10,7 @@
 		}
 
 	],
+
 	"VP-Academic": [
 		{
 			"Name": "Bryan Kim",
