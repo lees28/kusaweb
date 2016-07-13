@@ -1,21 +1,14 @@
 {
-	"Co-Presidents": [
+	"President": [
 		{
-			"Name": "Patrick Oh",
-			"Class": 2015,
-			"Major": ["Biology", "International Comparative Studies"],
-			"Hometown": "Poughkeepsie, NY",
+			"Name": "Doohee Lee",
+			"Class": 2017,
+			"Major": ["none"],
+			"Hometown": "none",
 			"Photo": "/static/photos/patrick.jpg",
 			"Email": "po14@duke.edu"
-		},
-		{
-			"Name": "Jun Yoon",
-			"Major": ["Economics", "Statistics"],
-			"Class": 2015,
-			"Hometown": "Seoul, South Korea",
-			"Photo": "/static/photos/jun.jpg",
-			"Email": "jun.yoon77@gmail.com"
 		}
+
 	],
 	"VP-Academic": [
 		{
