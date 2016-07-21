@@ -3,42 +3,58 @@
 	<div class="section-container">
 		<div class="narrower-container">
 			<div class="section-title">		
-		    	<h1> About Us </h1>
+		    	<h1> </br>
+		    		 VANDERBILT KOREAN UNDERGRADUATE  </br>
+		    		 STUDENT ASSOCIATION </br>
+		    	</h1>
 		    </div>
 		    <div class="section-content">
-			    <div id="about-list">
-				    <ul class="nav nav-pills nav-stacked" id="about-tab" role="tablist">
-						<li class="active"><a href="#mission" role="tab" data-toggle="tab"><h5>Mission Statement</h5></a></li>	
-						<li><a href="#cultural" role="tab" data-toggle="tab"><h5>Cultural Activities</h5></a></li>
-						<li><a href="#political" role="tab" data-toggle="tab"><h5>Political Activities</h5></a></li>
-						<li><a href="#social" role="tab" data-toggle="tab"><h5>Social Activities</h5></a></li>
-					</ul>
-				</div>
-				<div class="tab-content" id="about-content">
-					<div class="tab-pane fade in active" id="mission">
+			
+						<h2 class="intro-text"></h2>
 						<p>
-							Founded in 2002, the Korean Undergraduate Student Association (KUSA) exists to provide a sense of community for undergraduate students at Duke University who share a common interest in Korean culture. KUSA is dedicated to promoting the cultural, social, and political interests of the Korean community on campus through a variety of events. Furthermore, we seek to serve as a vehicle for encouraging friendship and mentorship by organizing social activities throughout the year.
+							</br>Vanderbilt University's Korean Students Association, a non-profit student-run organization, promotes cultural and social events on and off campus to celebrate its rich Korean heritage. Through events, programs, and other club functions, we strive to achieve a unified and inclusive community on campus. KUSA strives to promote awareness of Korean culture by collaborating with our Korean affiliated performance organizations. </br></br>
+							
 						</p>
-					</div>
-					<div class="tab-pane fade" id="cultural">
-						<p>
-							KUSA strives to promote awareness of Korean culture by collaborating with our Korean affiliated performance organizations. Duke students have opportunities to play traditional Korean percussion (samulnori), learn choreography to the latest K-Pop music, and harmonize with our singing groups, both acapella and rock. Additionally, we have an annual cultural showcase that allows students to display their talents as part of a group or individually on a grand stage. We also participate in university-sponsored events throughout the year that promote multicultural awareness and celebrate the diversity of the Duke community. 
-						</p>
-					</div>
-					<div class="tab-pane fade" id="political">
-						<p>
-							We organize various events that educate the rest of the Duke community about current issues relevant to Korean society as well as those that pertain to the identity of being Korean American. We seek to collaborate with academic departments and other student organizations throughout the year as a means of inviting guest speakers and encouraging open dialogue of Korean issues.  
-						</p>
-					</div>
-					<div class="tab-pane fade" id="social">
-						<p>
-							KUSA is committed to fostering good relationships that allow one to feel he or she belongs to a tight-knit family during their Duke experience. We organize many social activities such as off-campus excursions, sporting events, and of course Korean meals that will ease your homesickness. We also frequently collaborate with other cultural organizations that involve fierce competition for prizes and immeasurable glory, but more importantly fellowship that is fruitful and long-lasting.  
-						</p>
-					</div>
-				</div>
+						<form action="about/" method="post">{% csrf_token %}
+							  	<tr>
+							    	
+							    	<td><input style="width: 300px; padding: 20px; box-shaddow: 6px 6px 5px;  #D4AF37; font-weight: bold; background:  #D4AF37; color: #000000; cursor: pointer; border-radius: 10px; border: 1px solid #D9D9D9; font-size: 150%; "type="submit" value="OUR FACEBOOK PAGE" id="form-submit"></td>
+							    </tr>
+							    <tr>
+							    	
+							    	<td><input style="width: 300px; padding: 20px; box-shaddow: 6px 6px 5px;  #D4AF37; font-weight: bold; background:  #D4AF37; color: #000000; cursor: pointer; border-radius: 10px; border: 1px solid #D9D9D9; font-size: 150%; "type="submit" value="ABOUT US" id="form-submit"></td>
+							    </tr>
+			    		</form>
+			</div>
+			</div><!-- .header-content-wrap -->
+			<div class="clear">
 			</div>
 			<!-- <div id="white-rectangle"></div> -->
-		</div>
 	</div>
+</div>
+					<!--
+				<ul id="parallax_move">
+					<li class="layer layer1" data-depth="0.10" style="background-image: url(http://www.columbiaksa.com/wp-content/uploads/2016/01/12140016_916570225079013_7365797505371344030_o-1.jpg);">
+					</li>
+				</ul>
+			-->
+	<!--
+	<div class="home-header-wrap">
+		<ul id="parallax_move">
+			<li class="layer layer1" data-depth="0.10" style="background-image: url(http://www.columbiaksa.com/wp-content/uploads/2016/01/12140016_916570225079013_7365797505371344030_o-1.jpg);"></li>
+		</ul>
+		<div class="header-content-wrap">
+			<div class="container big-title-container">
+				<h1 class="intro-text">Welcome to Columbia Korean Students Association</h1>
+				<div class="buttons">	
+					<a href="https://www.facebook.com/ColumbiaKSA/" class="btn btn-primary custom-button red-btn">visit our facebook page</a>
+					<a href="http://www.columbiaksa.com/about/" class="btn btn-primary custom-button green-btn">learn more</a>
+				</div>
+			</div>
+		</div> .header-content-wrap 
+		<div class="clear"></div>
+	</div>
+-->
+
 </div> 
 {% endblock %}

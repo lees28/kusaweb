@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: arial;
+	background: #0f0f0f;
 }
 #container {
 	margin: 0 auto;
@@ -25,8 +26,8 @@ body {
 	margin-top:20px;
 }
 #logo img {
-	height: 214px;
-	width: 800px;
+	height: 200px;
+	width: 600px;
 }
 
 /* Main page containing different things */

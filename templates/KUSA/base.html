@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Vanderbilt KUSA: Vanderbilt University Korean Undergraduate Student Association</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" />                
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/jquery.fancybox.css" />
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}galleria/themes/classic/galleria.classic.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300|Oswald" rel="stylesheet" type="text/css" /> 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jcarousel.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/script.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}galleria/galleria-1.2.9.min.js"></script>
+        <!-- for google analytics -->
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-61754400-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+        <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="{{ STATIC_URL }}images/" type="image/x-icon">
+		<meta name="description" content="The Korean Undergraduate Student Association (KUSA) exists to provide a sense of community for undergraduate students at Duke University who share a common interest in Korean culture.">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta property="og:url" content="http://vanderbiltkusa.herokuapp.com"/> 
+		<meta property="og:title" content="Vanderbilt KUSA"/>
+		<meta property="og:description" content="The Korean Undergraduate Student Association (KUSA) exists to provide a sense of community for undergraduate students at Vanderbilt University who share a common interest in Korean culture."/> 
+		<meta property="og:image" content="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/269344_407788769304987_1034310108_n.jpg?oh=bc0153f689b5e37d0bc92fb53c679ef7&oe=5461ED7E&__gda__=1416801199_5d173725c2f92c3bb524a8b5bb41ccfa"/> 
+	</head>
+
+	<body>
+		<div id="container">
+			<!-- top bar/logo/nav -->
+			<div id="header">
+				<!--top bar with description and email-->
+				<!--
+				<div id="topbar">
+					<div class="narrower-container">
+						<div id="desc"><p>Vanderbilt Korean Undergraduate Student Organization</p></div>
+						<div id="email"><p>kusa.vandy@gmail.com</p></div>
+					</div>
+				</div>	
+				-->			
+				<!--space for kusa logo-->
+				<div id="logo">
+					<div class="narrower-container"> 
+						<img src="{{ STATIC_URL }}images/KUSA_logo.jpg" >
+					</div>
+				</div>
+				<!--nav bar for different pages-->
+				<div id="navbar"> 
+					<div class="narrower-container">
+						<ul id="nav-list">
+							<li><a href="#about">KUSA</a></li>
+							<li><a href="#exec">KUSA Board</a></li>
+							<li><a href="#events">Events</a></li>
+							<li><a href="#photos">Photos</a></li>
+							<li><a href="#contact">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--carousel/about/exec/photo/calendar/contact-->
+			<div id="maininfo">
+				{% block carousel %}{% endblock %}
+				{% block about %}{% endblock %}
+				{% block exec %}{% endblock %}
+				{% block events %}{% endblock %}
+				{% block photo %}{% endblock %}
+				{% block contact %}{% endblock %}
+			</div>
+		
+		</div>
+	</body>
+</html>
+
