@@ -2,7 +2,7 @@
 	<head>
 		<title>Vanderbilt KUSA: Vanderbilt University Korean Undergraduate Student Association</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style1.css" />  
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style_board.css" />  
 
 		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/magnific-popup.css" />                
            
@@ -48,10 +48,10 @@
 			            <li><a href="/"> Home</a></li>
 			            <li><a href="../about/">About</a></li>
 				        <li class="current"><a href="../board/">Kusa board</a></li>
-			            <li><a href="#events">Events</a></li>
-			            <li><a href="photos/">Photos</a></li>
-			            <li><a href="#jobs">Jobs</a></li>
-			            <li><a href="#contact">Contact US</a></li>
+			            <li><a href="../events/">Events</a></li>
+			            <li><a href="../photos/">Photos</a></li>
+			            <li><a href="../comment/">Comments</a></li>
+			            <li><a href="../contact/">Contact US</a></li>
 		         	</ul> <!-- end #nav -->
 		     	</nav>
 		</header>		
@@ -65,17 +65,18 @@
 					    </div>
 					</div>
 				-->
-<div id="maininfo">
+<div id="container">
 						<div class="section-title">		
 					    	<h3>meet our 2016-2017 board</h3>
 					    </div>
+</div>
    <section id="board">
 	  <div class="row">
          <div class="twelve columns collapsed">
 
 
   			<!-- board-wrapper -->
-            <div id="board-wrapper" class="bgrid-quarters cf">
+            <div id="board-wrapper" class="bgrid-quarters -bgrid-thirds cf">
 
 <!-- modal-01 Start -->
 		          	   <div class="columns board-item">
@@ -88,7 +89,7 @@
 			                             	     <p>President</p>
 			          					       </div>
 			                            </div>
-	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
+	                       		 <div class="link-icon"><i class="icon-plus">+</i></div>
                      		</a>
 
                  		  </div>
@@ -105,6 +106,7 @@
 									<b>School:</b> Wharton/Engineering (M&T)
 									<br><b>Major:</b> Computer Science, Finance, Statistics 
 									<br><b>Graduating Year:</b> 2017
+									 </p>
 
 			            <div class="link-box">
 					         <a class="popup-modal-dismiss">Close</a>
@@ -112,7 +114,7 @@
 
 				      </div>  
 				      </div> 
-				      </div>   			          
+				     			          
 <!-- modal-01 End -->
           
 <!-- modal-02 Start -->
@@ -128,7 +130,7 @@
 						                              <p>Vice President</p>
 						          					   </div>
 						                        </div>
-						                        <div class="link-icon"><i class="icon-plus"></i></div>
+						                        <div class="link-icon"><i class="icon-plus">+</i></div>
 						                     </a>
 						                 </div>
 						          		</div>
@@ -165,7 +167,7 @@
 			                             	     <p>Treasurer</p>
 			          					       </div>
 			                            </div>
-	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
+	                       		 <div class="link-icon"><i class="icon-plus">+</i></div>
                      		</a>
 
                  		  </div>
@@ -176,20 +178,22 @@
 					      <center><img src="{{STATIC_URL}}photos/chewy.jpg" alt="" width="462" height="462" class="scale-with-grid" /></center>
 
 					      <div class="description-box">
-						      <h4>Choongwon Jin
-			                <br>Treasurer</h4>
-						      <p>
-									<b>School:</b> Wharton/Engineering (M&T)
+								      <h4>Choongwon Jin
+					                	<br>Treasurer</h4>
+						     		<p>
+									<b>School:</b> Wharton/Engineering 
 									<br><b>Major:</b> Computer Science, Finance, Statistics 
 									<br><b>Graduating Year:</b> 2017
+								</p>
+								
 
-			            <div class="link-box">
-					         <a class="popup-modal-dismiss">Close</a>
-			            </div>
+						            <div class="link-box">
+								         <a class="popup-modal-dismiss">Close</a>
+						            </div>
+						             </div>  
 
-				      </div>  
-				      </div> 
-				      </div>             
+				     		 </div>  
+			
 <!-- modal-03 End -->
 
 
@@ -206,7 +210,7 @@
 			                             	     <p>Secretary</p>
 			          					       </div>
 			                            </div>
-	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
+	                       		 <div class="link-icon"><i class="icon-plus">+</i></div>
                      		</a>
 
                  		  </div>
@@ -223,29 +227,27 @@
 									<b>School:</b> Wharton/Engineering (M&T)
 									<br><b>Major:</b> Computer Science, Finance, Statistics 
 									<br><b>Graduating Year:</b> 2017
-
+								</p>
 			            <div class="link-box">
 					         <a class="popup-modal-dismiss">Close</a>
 			            </div>
 
 				      </div>  
 				      </div> 
-				      </div>   		          
-<!-- modal-04 End -->
 
 <!-- modal-05 Start -->
 
 		          	   <div class="columns board-item">
 		                  <div class="item-wrap">
  							<a href="#modal-05" title="">
-	                    		 <center><img alt="" src="{{STATIC_URL}}photos/jun.jpg"></center>
+	                    		 <center><img alt="" src="{{STATIC_URL}}photos/jun.jpg" width="215" height="212" ></center>
 			                        	<div class="overlay">
 			                         		  <div class="board-item-meta">
 			          					     	 <h5>Jun Lee</h5>
 			                             	     <p>Special Events</p>
 			          					       </div>
 			                            </div>
-	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
+	                       		 <div class="link-icon"><i class="icon-plus">+</i></div>
                      		</a>
 
                  		  </div>
@@ -258,18 +260,18 @@
 					      <div class="description-box">
 						      <h4>Jun Lee
 			                <br>Special Events</h4>
-						      <p>
+						     <p>
 									<b>School:</b> Wharton/Engineering (M&T)
 									<br><b>Major:</b> Computer Science, Finance, Statistics 
 									<br><b>Graduating Year:</b> 2017
-
+							</p>
 			            <div class="link-box">
 					         <a class="popup-modal-dismiss">Close</a>
 			            </div>
 
 				      </div>  
 				      </div> 
-				      </div>   			          
+				        			          
 <!-- modal-05 End -->
 
 <!-- modal-06 Start -->
@@ -277,14 +279,14 @@
 		          	   <div class="columns board-item">
 		                  <div class="item-wrap">
  							<a href="#modal-06" title="">
-	                    		 <center><img alt="" src="{{STATIC_URL}}photos/lois.jpg"></center>
+	                    		 <center><img alt="" src="{{STATIC_URL}}photos/lois.jpg"  width="215" height="212"></center>
 			                        	<div class="overlay">
 			                         		  <div class="board-item-meta">
 			          					     	 <h5>Lois You</h5>
 			                             	     <p>Study Abroad</p>
 			          					       </div>
 			                            </div>
-	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
+	                       		 <div class="link-icon"><i class="icon-plus">+</i></div>
                      		</a>
 
                  		  </div>
@@ -301,14 +303,14 @@
 									<b>School:</b> Wharton/Engineering (M&T)
 									<br><b>Major:</b> Computer Science, Finance, Statistics 
 									<br><b>Graduating Year:</b> 2017
-
+									</p>			
 			            <div class="link-box">
 					         <a class="popup-modal-dismiss">Close</a>
 			            </div>
 
 				      </div>  
 				      </div> 
-				      </div>   			          
+				      			          
 <!-- modal-06 End -->
 
 
@@ -316,8 +318,8 @@
 		          	   <div class="columns board-item">
 		                  <div class="item-wrap">
  							<a href="#modal-07" title="">
-	                    		 <center><img alt="" src="{{STATIC_URL}}photos/ahn.jpg"></center>
-			                        	<div class="overlay">
+	                    		 <center><img alt="" src="{{STATIC_URL}}photos/ahn.jpg"  width="215" height="212"></center>
+			                        	<div class="overlay"> 
 			                         		  <div class="board-item-meta">
 			          					     	 <h5>Soeun Ahn</h5>
 			                             	     <p>Language Chair</p>
@@ -340,14 +342,14 @@
 									<b>School:</b> Wharton/Engineering (M&T)
 									<br><b>Major:</b> Computer Science, Finance, Statistics 
 									<br><b>Graduating Year:</b> 2017
-
+									</p>			
 			            <div class="link-box">
 					         <a class="popup-modal-dismiss">Close</a>
 			            </div>
 
 				      </div>  
 				      </div> 
-				      </div>             
+				               
 <!-- modal-07 End -->
 
 
@@ -355,11 +357,11 @@
 		          	   <div class="columns board-item">
 		                  <div class="item-wrap">
  							<a href="#modal-08" title="">
-	                    		 <center><img alt="" src="{{STATIC_URL}}photos/crystal.jpg"></center>
+	                    		 <center><img alt="" src="{{STATIC_URL}}photos/wooseong.jpg"></center>
 			                        	<div class="overlay">
 			                         		  <div class="board-item-meta">
-			          					     	 <h5>Crystal Kim</h5>
-			                             	     <p>Secretary</p>
+			          					     	 <h5>Wooseong Choi</h5>
+			                             	     <p>Special Events</p>
 			          					       </div>
 			                            </div>
 	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
@@ -370,23 +372,23 @@
                 
    					  <div id="modal-08" class="popup-modal mfp-hide">
 
-					      <center><img src="{{STATIC_URL}}photos/crystal.jpg" alt="" width="462" height="462" class="scale-with-grid" /></center>
+					      <center><img src="{{STATIC_URL}}photos/wooseong.jpg" alt="" width="462" height="462" class="scale-with-grid" /></center>
 
 					      <div class="description-box">
-						      <h4>Crystal Kim
-			                <br>Secretary</h4>
+						      <h4>Wooseong Choi
+			                <br>Special Events</h4>
 						      <p>
 									<b>School:</b> Wharton/Engineering (M&T)
 									<br><b>Major:</b> Computer Science, Finance, Statistics 
 									<br><b>Graduating Year:</b> 2017
-
+									</p>		
 			            <div class="link-box">
 					         <a class="popup-modal-dismiss">Close</a>
 			            </div>
 
 				      </div>  
 				      </div> 
-				      </div>   
+				      
 			          
 <!-- modal-08 End -->
 
@@ -395,12 +397,12 @@
 
 		          	   <div class="columns board-item">
 		                  <div class="item-wrap">
- 							<a href="#modal-04" title="">
-	                    		 <center><img alt="" src="{{STATIC_URL}}photos/crystal.jpg"></center>
+ 							<a href="#modal-09" title="">
+	                    		 <center><img alt="" src="{{STATIC_URL}}photos/sean.jpg"></center>
 			                        	<div class="overlay">
 			                         		  <div class="board-item-meta">
-			          					     	 <h5>Crystal Kim</h5>
-			                             	     <p>Secretary</p>
+			          					     	 <h5>Sean Ha</h5>
+			                             	     <p>Publicity</p>
 			          					       </div>
 			                            </div>
 	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
@@ -409,25 +411,25 @@
                  		  </div>
           		       	</div> 
                 
-   					  <div id="modal-04" class="popup-modal mfp-hide">
+   					  <div id="modal-09" class="popup-modal mfp-hide">
 
-					      <center><img src="{{STATIC_URL}}photos/crystal.jpg" alt="" width="462" height="462" class="scale-with-grid" /></center>
+					      <center><img src="{{STATIC_URL}}photos/sean.jpg" alt="" width="462" height="462" class="scale-with-grid" /></center>
 
 					      <div class="description-box">
-						      <h4>Crystal Kim
-			                <br>Secretary</h4>
+						      <h4>Sean Ha
+			                <br>Publicity</h4>
 						      <p>
 									<b>School:</b> Wharton/Engineering (M&T)
 									<br><b>Major:</b> Computer Science, Finance, Statistics 
 									<br><b>Graduating Year:</b> 2017
-
+									</p>	
 			            <div class="link-box">
 					         <a class="popup-modal-dismiss">Close</a>
 			            </div>
 
 				      </div>  
 				      </div> 
-				      </div>   
+				     
 			          
 <!-- modal-09 End -->
 
@@ -436,12 +438,12 @@
 
 		          	   <div class="columns board-item">
 		                  <div class="item-wrap">
- 							<a href="#modal-04" title="">
-	                    		 <center><img alt="" src="{{STATIC_URL}}photos/crystal.jpg"></center>
+ 							<a href="#modal-10" title="">
+	                    		 <center><img alt="" src="{{STATIC_URL}}photos/joey.jpg"></center>
 			                        	<div class="overlay">
 			                         		  <div class="board-item-meta">
-			          					     	 <h5>Crystal Kim</h5>
-			                             	     <p>Secretary</p>
+			          					     	 <h5>Joey Yoon</h5>
+			                             	     <p>GBM Planner</p>
 			          					       </div>
 			                            </div>
 	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
@@ -450,148 +452,38 @@
                  		  </div>
           		       	</div> 
                 
-   					  <div id="modal-04" class="popup-modal mfp-hide">
+   					  <div id="modal-10" class="popup-modal mfp-hide">
 
-					      <center><img src="{{STATIC_URL}}photos/crystal.jpg" alt="" width="462" height="462" class="scale-with-grid" /></center>
+					      <center><img src="{{STATIC_URL}}photos/joey.jpg" alt="" width="462" height="462" class="scale-with-grid" /></center>
 
 					      <div class="description-box">
-						      <h4>Crystal Kim
-			                <br>Secretary</h4>
+						      <h4>Joey Yoon
+			                <br>GBM Planner</h4>
 						      <p>
 									<b>School:</b> Wharton/Engineering (M&T)
 									<br><b>Major:</b> Computer Science, Finance, Statistics 
 									<br><b>Graduating Year:</b> 2017
-
+										</p>
 			            <div class="link-box">
 					         <a class="popup-modal-dismiss">Close</a>
 			            </div>
 
 				      </div>  
 				      </div> 
-				      </div>   
 			          
 <!-- modal-10 End -->
 
 
-<!-- modal-10 Start -->
 
-		          	   <div class="columns board-item">
-		                  <div class="item-wrap">
- 							<a href="#modal-04" title="">
-	                    		 <center><img alt="" src="{{STATIC_URL}}photos/crystal.jpg"></center>
-			                        	<div class="overlay">
-			                         		  <div class="board-item-meta">
-			          					     	 <h5>Crystal Kim</h5>
-			                             	     <p>Secretary</p>
-			          					       </div>
-			                            </div>
-	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
-                     		</a>
+     
+           </div> <!-- board-wrapper end -->
 
-                 		  </div>
-          		       	</div> 
-                
-   					  <div id="modal-04" class="popup-modal mfp-hide">
+         </div> <!-- twelve columns end -->
+      
+      </div> <!-- row End -->
 
-					      <center><img src="{{STATIC_URL}}photos/crystal.jpg" alt="" width="462" height="462" class="scale-with-grid" /></center>
+   </section> <!-- Board Section End-->
 
-					      <div class="description-box">
-						      <h4>Crystal Kim
-			                <br>Secretary</h4>
-						      <p>
-									<b>School:</b> Wharton/Engineering (M&T)
-									<br><b>Major:</b> Computer Science, Finance, Statistics 
-									<br><b>Graduating Year:</b> 2017
-
-			            <div class="link-box">
-					         <a class="popup-modal-dismiss">Close</a>
-			            </div>
-
-				      </div>  
-				      </div> 
-				      </div>   
-			          
-<!-- modal-10 End -->
-
-<!-- modal-11 Start -->
-
-		          	   <div class="columns board-item">
-		                  <div class="item-wrap">
- 							<a href="#modal-04" title="">
-	                    		 <center><img alt="" src="{{STATIC_URL}}photos/crystal.jpg"></center>
-			                        	<div class="overlay">
-			                         		  <div class="board-item-meta">
-			          					     	 <h5>Crystal Kim</h5>
-			                             	     <p>Secretary</p>
-			          					       </div>
-			                            </div>
-	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
-                     		</a>
-
-                 		  </div>
-          		       	</div> 
-                
-   					  <div id="modal-04" class="popup-modal mfp-hide">
-
-					      <center><img src="{{STATIC_URL}}photos/crystal.jpg" alt="" width="462" height="462" class="scale-with-grid" /></center>
-
-					      <div class="description-box">
-						      <h4>Crystal Kim
-			                <br>Secretary</h4>
-						      <p>
-									<b>School:</b> Wharton/Engineering (M&T)
-									<br><b>Major:</b> Computer Science, Finance, Statistics 
-									<br><b>Graduating Year:</b> 2017
-
-			            <div class="link-box">
-					         <a class="popup-modal-dismiss">Close</a>
-			            </div>
-
-				      </div>  
-				      </div> 
-				      </div>   
-			          
-<!-- modal-11 End -->
-
-<!-- modal-12 Start -->
-
-		          	   <div class="columns board-item">
-		                  <div class="item-wrap">
- 							<a href="#modal-04" title="">
-	                    		 <center><img alt="" src="{{STATIC_URL}}photos/crystal.jpg"></center>
-			                        	<div class="overlay">
-			                         		  <div class="board-item-meta">
-			          					     	 <h5>Crystal Kim</h5>
-			                             	     <p>Secretary</p>
-			          					       </div>
-			                            </div>
-	                       		 <div class="link-icon"><h5 class="icon-plus">+</h5></div>
-                     		</a>
-
-                 		  </div>
-          		       	</div> 
-                
-   					  <div id="modal-04" class="popup-modal mfp-hide">
-
-					      <center><img src="{{STATIC_URL}}photos/crystal.jpg" alt="" width="462" height="462" class="scale-with-grid" /></center>
-
-					      <div class="description-box">
-						      <h4>Crystal Kim
-			                <br>Secretary</h4>
-						      <p>
-									<b>School:</b> Wharton/Engineering (M&T)
-									<br><b>Major:</b> Computer Science, Finance, Statistics 
-									<br><b>Graduating Year:</b> 2017
-
-			            <div class="link-box">
-					         <a class="popup-modal-dismiss">Close</a>
-			            </div>
-
-				      </div>  
-				      </div> 
-				      </div>   
-			          
-<!-- modal-12 End -->
 
 	</body>
 

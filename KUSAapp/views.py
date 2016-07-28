@@ -18,6 +18,9 @@ def home(request):
 
     return render(request,'index1.html',{})
 
+def free(request):
+    return render(request, 'free.html')
+
 
 def about(request):
     return render(request, 'base.html',{})
@@ -27,6 +30,27 @@ def board(request):
 
 def photos(request):
     return render(request, 'photos.html',{})
+
+def contact(request):
+    return render(request, 'contact.html',{})
+
+def events(request):
+
+    return render(request, 'events.html',{})
+
+def comment(request):
+
+    return render(request, 'comment.html',{})
+
+def send(request):
+    send_mail(
+        request.POST['subject'],
+        request.POST['message'],
+        request.POST.get('email', 'noreply@simplesite.com'),
+        ['kusa.vandy@gmail.com'], #email address where message is sent.
+        fail_silently=False
+    )
+    return HttpResponseRedirect('../contact/')
 
 
 
@@ -46,14 +70,5 @@ def photos(request):
 #            photo_urls.append(lines)
 #        return render(request, 'english.html', {"execs":execs, "photo_urls":photo_urls, "filenames":filenames})
 
-def contact(request):
-    send_mail(
-        request.POST['subject'],
-        request.POST['message'],
-        request.POST.get('email', 'noreply@simplesite.com'),
-        ['kusa.vandy@gmail.com'], #email address where message is sent.
-        fail_silently=False
-    )
-    return HttpResponseRedirect('/')
 
 

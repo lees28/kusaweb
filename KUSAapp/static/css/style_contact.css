@@ -7,6 +7,8 @@ body {
 	margin: 0;
 	font-family: 'Lato', sans-serif;
 	background: black;
+	   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
 }
 
 
@@ -15,7 +17,7 @@ body {
 /* Text formatting */
 h1 {
 	font-family: "Franklin Gothic Medium", sans-serif;
-	font-size:40px;
+	font-size:30px;
 	color: white;
 
 	display:inline-block;
@@ -34,7 +36,15 @@ h2 {
 
 	font-size:40px;
 	display:inline-block;
+}
+h3{
+	font-family:'opensans-bold', sans-serif;
+	font-size:20px;
+	color: #7f7f7f;
+		font-weight: bolder;
+	padding-top:50px;
 
+	   text-transform: uppercase;
 
 }
 b {
@@ -56,13 +66,19 @@ h5 {
 	font-size:16px;
 }
 p {
+	font-color: white;
 	font-size:20px;
+}
+a{
+	color: white;
 }
 /* Form formatting */
 
 /* Table formatting */
 
 /* etc */
+
+
 
 
 /********************* * LAYOUT * *********************/
@@ -75,7 +91,7 @@ p {
 	text-align: center;
 }
 .narrower-container {
-	width: 	950px;
+	width: 	1000px;
 	height:	100%;
 	margin: 0 auto;
 }
@@ -130,15 +146,17 @@ input[type="submit"]
 
 header {
    position: relative;
-   height: 1000px;
-   min-height: 500px;
+   height: 50px;
+   min-height: 50px;
    width: 100%;
-   background: #161415 url(../images/grey_wall_wash_2.jpg) no-repeat top center;
+   background: white;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
 }
+
+
 /* vertically center banner section */
 header:before {
    content: '';
@@ -268,7 +286,7 @@ ul#nav li a {
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
-   color: #fff;
+   color: black;
 
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
@@ -751,26 +769,62 @@ ul#nav li.current a { color: #F06000; }
 	/*background-color:#FFFFFF;*/
 	height: 600px;
 	margin: 0 auto;	
-	background-image:url("../images/witewall_3.png");
+	background: #161415 url(../images/grey_wall_wash_2.jpg) no-repeat top center;
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
 }
 #contact h1 {
-	border-bottom: 4px solid #B4B4B4;
+	margin-left: 100px;
+	border-bottom: 2px solid #D4AF37;
+
 }
 #contact p {
 	text-align: left;
+	color: white;
+	margin-left: 100px;
 	margin-bottom:20px;
 
 }
+#contact a {
+	text-align: left;
+	color: #D4AF37;
+
+
+}
+
 #contact td {
 	padding-right: 20px;
 	padding-bottom: 10px;
+		color: white;
+
 }
+
+#contact td textarea {
+	color: black;
+
+}
+
 #contact td input {
+	color: black;
 	width: 200px;
 }
+
+
 #contact #form-submit {
-	width:75px;
+ display: inline-block;
+ width: 130px;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #D4AF37;
+  border: none;
+  border-radius: 5px;
 }
+
 
 /* Footer */
 #footer {
@@ -797,40 +851,82 @@ ul#nav li.current a { color: #F06000; }
 	text-decoration: none;
 }
 
-/********************* * NAVIGATION * *********************/
 
-/* I put navigation separate to the layout as there can be a number of navigation points under their sub-headings */
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
 
-/* Main (horizontal) Navigation */
+div.wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
 
-/* Left Navigation */
+div.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 
-/* Right Navigation */
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+}
 
-/* Breadcrumb Navigation */
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #ff0000;
+}
 
-/********************* * FORMS * *********************/
-	
-/* Any form formatting that varies from the common formatting, if there are multiple differently formatted forms, then use sub-headings */
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+}
 
-/********************* * TABLES * *********************/
+div.wpcf7-validation-errors {
+	border: 2px solid #f7e700;
+}
 
-/* Same deal as forms */
+.wpcf7-form-control-wrap {
+	position: relative;
+}
 
-/********************* * LISTS * *********************/
+span.wpcf7-not-valid-tip {
+	color: #f00;
+	font-size: 1em;
+	display: block;
+}
 
-/* Same deal as forms and tables */
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #ff0000;
+	background: #fff;
+	padding: .2em .8em;
+}
 
-/********************* * CONTENT * *********************/
+span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
 
-/* Any specific formatting for particular pages, grouped by sub-headings for the page the same way as forms, tables and lists */
+.wpcf7-display-none {
+	display: none;
+}
 
-/********************* * CSS SUPPORT * *********************/
+div.wpcf7 img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+	margin-left: 4px;
+}
 
+div.wpcf7 div.ajax-error {
+	display: none;
+}
 
-
-
-
-
-/* Exec */
-
+div.wpcf7 .placeheld {
+	color: #888;
+}

@@ -2,7 +2,10 @@
 	<head>
 		<title>Vanderbilt KUSA: Vanderbilt University Korean Undergraduate Student Association</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" />                
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style_contact.css" />  
+
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/magnific-popup.css" />                
+           
         <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/jquery.fancybox.css" />
         <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}galleria/themes/classic/galleria.classic.css">
         <link href="http://fonts.googleapis.com/css?family=Lato:300|Oswald" rel="stylesheet" type="text/css" /> 
@@ -10,6 +13,11 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/jcarousel.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}js/script.js"></script>
+
+        <script src="{{ STATIC_URL }}js/magnific-popup.js"></script>
+        <script src="{{ STATIC_URL }}js/modernizr.js"></script>
+         <script src="{{ STATIC_URL }}js/init.js"></script>
+
         <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.fancybox.pack.js"></script>
         <script type="text/javascript" src="{{ STATIC_URL }}galleria/galleria-1.2.9.min.js"></script>
         <!-- for google analytics -->
@@ -31,73 +39,61 @@
 		<meta property="og:description" content="The Korean Undergraduate Student Association (KUSA) exists to provide a sense of community for undergraduate students at Vanderbilt University who share a common interest in Korean culture."/> 
 		<meta property="og:image" content="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/269344_407788769304987_1034310108_n.jpg?oh=bc0153f689b5e37d0bc92fb53c679ef7&oe=5461ED7E&__gda__=1416801199_5d173725c2f92c3bb524a8b5bb41ccfa"/> 
 	</head>
-	<body>
-		<header id="home">
 
+	<body>
+		
+		<header id="home">
 				<nav id="nav-wrap">
 					<ul id="nav" class="nav">
-			            <li class="current"><a href="/"> Home</a></li>
-			            <li><a href="about/">About</a></li>
-				        <li><a href="board/">Kusa board</a></li>
-			            <li><a href="events/">Events</a></li>
-			            <li><a href="photos/">Photos</a></li>
-			            <li><a href="comment/">Comments</a></li>
-			            <li><a href="contact/">Contact US</a></li>
+			            <li><a href="/"> Home</a></li>
+			            <li><a href="../about/">About</a></li>
+				        <li><a href="../board/">Kusa board</a></li>
+			            <li><a href="../events/">Events</a></li>
+			            <li><a href="../photos/">Photos</a></li>
+			            <li><a href="../comment/">Comments</a></li>
+			            <li class="current"><a href="../contact/">Contact US</a></li>
 		         	</ul> <!-- end #nav -->
 		     	</nav>
-     	    <div class="row banner">
-	         	<div class="banner-text">
-			           <h1 >WELCOME TO VANDERBILT </h1>
-			           <h1>KOREAN UNDERGRADUATE STUDENT</h1>
-			           	 <h1 >ASSOCIATION</h1>
-						<h3>
-							Vanderbilt University's Korean Undergraduate Student Association, a non-profit student-run organization, promotes cultural and social events on and off campus to celebrate its rich Korean heritage. </br></br>
-							
-						</h3>
-			        
-			     </div>
-			           	     <form action="about/" method="post">{% csrf_token %}
-								<tr>
-							    	
-							    	<td><input style="width: 150x; padding: 15px; box-shaddow: 6px 6px 5px;  #D4AF37; font-weight: bolder; background:  #D4AF37; color: white; cursor: pointer; border-radius: 10px; border: 0px solid #D9D9D9; font-size: 110%; "type="submit" value="VISIT OUR FACEBOOK PAGE" id="form-submit"></td>
-							    </tr>	
-							</form>
-      	     </div>		
+		</header>		
 
-				
-   </header> <!-- Header End ->
+		<div id="contact">
+			<div class="section-container">
+				<div class="narrower-container">
+					<div class="section-title">
+						<h1></br>Contact</br></h1>
+					</div>
+					<div class="section-content">
+						<p></br>Wanna get in touch? Send us a message by filling out the form below or e-mail us directly at <a href="mailto:kusa.vandy@gmail.com">kusa.vandy@gmail.com</a>. </p>
 
+							<!--You can also sign up for our <a href="" target="_blank">listserv</a> or follow us on <a href="https://www.facebook.com/groups/206218879469984/" target="_blank">Facebook</a> for more information!</p> -->
+						  
+					    <form action="../send/" method="post">{% csrf_token %}
+					    	<table>
+					    		<tr>
+					    			<td>Your Name:</td>
+					    			<td><input type="text" name="subject" id="form-subject"></td>
+					    		</tr>
+					    		<tr>
+					    			<td>Your e-mail:</td>
+					    			<td><input type="text" name="email" id="form-email"></td>
+					    		</tr>
+							    <tr>
+							    	<td>Message:</td>
+							    	<td><textarea name="message" rows="12" cols="100" id="form-message"></textarea></td>					        
+							    </tr>
+							    <tr>
+							    	<td></td>
+							    	<td></br></br><input type="submit" value="Submit" id="form-submit"></td>
+							    </tr>
 
-
-			<!-- top bar/logo/nav 
-			<div id="header_base">
-				<a href="http://www.vanderdiltkua.herokuapp.com" class="navbar-brand"><img src="{{ STATIC_URL }}images/KUSA_logo.jpg" alt="Vanderbilt KUSA"></a>
-			</div>s
-			-->
-
-</body>
-					<!--
-				<ul id="parallax_move">
-					<li class="layer layer1" data-depth="0.10" style="background-image: url(http://www.columbiaksa.com/wp-content/uploads/2016/01/12140016_916570225079013_7365797505371344030_o-1.jpg);">
-					</li>
-				</ul>
-			-->
-	<!--
-	<div class="home-header-wrap">
-		<ul id="parallax_move">
-			<li class="layer layer1" data-depth="0.10" style="background-image: url(http://www.columbiaksa.com/wp-content/uploads/2016/01/12140016_916570225079013_7365797505371344030_o-1.jpg);"></li>
-		</ul>
-		<div class="header-content-wrap">
-			<div class="container big-title-container">
-				<h1 class="intro-text">Welcome to Columbia Korean Students Association</h1>
-				<div class="buttons">	
-					<a href="https://www.facebook.com/ColumbiaKSA/" class="btn btn-primary custom-button red-btn">visit our facebook page</a>
-					<a href="http://www.columbiaksa.com/about/" class="btn btn-primary custom-button green-btn">learn more</a>
+					        </table>
+					    </form>
+					     <p>Also, don't forget to sign up for our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaIVJL4TrKDDhzZtyFY381-Y2L7hA0-wj7v8ktI63BvlkXiw/viewform" target="_blank">listserv</a> or join our <a href="https://www.facebook.com/groups/206218879469984/" target="_blank">Facebook Page</a> for more information!</p> 
+					</div>
 				</div>
 			</div>
-		</div> .header-content-wrap 
-		<div class="clear"></div>
-	</div>
--->
+		</div>
+
+</body>
 
 </html>

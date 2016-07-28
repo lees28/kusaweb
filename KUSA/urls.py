@@ -18,8 +18,12 @@ urlpatterns = patterns('',
     url(r'^board/$','KUSAapp.views.board',name='board'),                                                                     
     url(r'^photos/?$','KUSAapp.views.photos',name='photos'),    
     url(r'^events/?$','KUSAapp.views.events',name='events'),                                                                     
-    url(r'^contact/?$','KUSAapp.views.contact',name='contact'),                                                                     
-                                                            
+    url(r'^contact/?$','KUSAapp.views.contact',name='contact'),     
+    url(r'^send/?$', 'KUSAapp.views.send', name='send'),
+    url(r'^comment/?$', 'KUSAapp.views.comment', name='comment'),
+
+    url(r'^free/?$', 'KUSAapp.views.free', name='free')
+
                                                                     
 
         #url(r'^/?$','KUSAapp.views.homepage'),
@@ -29,6 +33,5 @@ urlpatterns = patterns('',
     # url(r'^eng/?$', 'KUSAapp.views.engHomepage'),
     # url(r'^kor/?$', 'KUSAapp.views.korHomepage'),
     
-    # contact form
-    url(r'^contact/?$', 'KUSAapp.views.contact', name='contact')
+
 )

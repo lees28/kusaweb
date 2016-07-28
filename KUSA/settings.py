@@ -111,9 +111,9 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 import os
-EMAIL_HOST_USER = 'app25920742@heroku.com'
-EMAIL_HOST= 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'kusa.vandy@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'  
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = 'nm2vvbuu'
+EMAIL_HOST_PASSWORD = 'kusa2017'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
