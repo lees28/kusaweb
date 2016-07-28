@@ -511,7 +511,7 @@ properly.
 	-moz-transition: opacity 0.3s ease-in-out;
 	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
-    background: url(../photos/overlay-bg.jpg) repeat;
+    background: url(../images/overlay-bg.png) repeat;
 }
 
 .board-item .item-wrap .link-icon {
