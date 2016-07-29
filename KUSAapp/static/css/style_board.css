@@ -576,13 +576,15 @@ properly.
    vertical-align: bottom;
 }
 .board-item .board-item-meta { padding: 18px }
+
 .board-item .board-item-meta h5 {
    font: 14px/21px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: white;
 }
-.board-item .board-item-meta p {
+
+.board-item .board-item-meta h4 {
    font: 12px/18px 'opensans-light', sans-serif;
-   color: #c6c7c7;
+   color: white;
    margin-bottom: 0;
 }
 
