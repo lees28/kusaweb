@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	font-family: 'Lato', sans-serif;
-	background: white;
+	background-image: url("../images/greyzz.png");
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -71,6 +71,8 @@ h5 {
 p {
 	font-size:20px;
 }
+
+
 /* Form formatting */
 
 /* Table formatting */
@@ -203,6 +205,7 @@ properly.
 #container {
 	margin: 	0 auto;
 	text-align: center;
+	overflow:scroll;
 }
 .narrower-container {
 	width: 	950px;
@@ -354,16 +357,20 @@ header .scrolldown a {
 
 /* Footer */
 #footer {
-	height:50px;
+	height:100px;
 	width:100%;
-	color:black;
-	font-size:20px;
+	background-color:#575757;
+	font-size:15px;
+	font-color: white;
 }
 #footer-desc {
 	float:left;
-	background:#303030;
 	margin-top:10px;
 	display:inline-block;
+}
+#footer-desc p {
+	color: white;
+	font-size: 15px;
 }
 #toTop {
 	/*height: 20px;

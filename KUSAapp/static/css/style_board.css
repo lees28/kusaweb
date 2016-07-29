@@ -47,7 +47,7 @@ h3{
 
 	   text-transform: uppercase;
 
-}
+
 
 }
 b {
@@ -252,6 +252,7 @@ properly.
 
 }
 
+
 /* Header */
 
 
@@ -351,6 +352,34 @@ header .scrolldown a {
    transition: all .3s ease-in-out;
 }
 
+/* Footer */
+#footer {
+  height:100px;
+  width:100%;
+  background-color:#575757;
+  font-size:15px;
+  font-color: white;
+}
+#footer-desc {
+  float:left;
+  margin-top:10px;
+  display:inline-block;
+}
+#footer-desc p {
+  color: white;
+  font-size: 15px;
+}
+#toTop {
+  /*height: 20px;
+  width: 20px;*/
+  margin-top:10px;
+  float:right;
+  display:inline-block;
+  font-size:20px;
+}
+#toTop a {
+  text-decoration: none;
+}
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -463,9 +492,14 @@ properly.
 #board {
    background: #ebeeee;
    padding-top: 90px;
-  padding-bottom: 60px;
+  padding-bottom: 90px;
 
  
+}
+#board p{
+      margin-left:300px;
+     text-align: center;
+
 }
 
 #board h1 {
