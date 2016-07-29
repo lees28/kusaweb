@@ -251,6 +251,30 @@ properly.
   	text-align: center;
 
 }
+/* Footer */
+#footer {
+  height:100px;
+  width:100%;
+  background-image: url("../images/grey_wash_wall.png");
+  font-size:20px;
+}
+#footer-desc {
+  float:left;
+  background:#303030;
+  margin-top:10px;
+  display:inline-block;
+}
+#toTop {
+  /*height: 20px;
+  width: 20px;*/
+  margin-top:10px;
+  float:right;
+  display:inline-block;
+  font-size:20px;
+}
+#toTop a {
+  text-decoration: none;
+}
 
 /* Header */
 
@@ -350,6 +374,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
+
 
 
 /* primary navigation
@@ -478,7 +503,7 @@ properly.
 }
 
 /* Board Content */
-#board-wrapper .columns { margin-bottom: 10px; }
+#board-wrapper .columns { margin-bottom: 0px; }
 .board-item .item-wrap {
    background: #fff;
    overflow: hidden;
@@ -503,7 +528,7 @@ properly.
    width: 100%;
    height: 100%;
 
-	opacity: 50;
+	opacity: 0;
 	-moz-opacity: 0;
 	filter:alpha(opacity=0);
 
@@ -511,8 +536,9 @@ properly.
 	-moz-transition: opacity 0.3s ease-in-out;
 	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
-  /*background: url(../photos/overlay-bg.jpg) repeat;*/
+  background: url(../images/overlay-bg.png) repeat;
 }
+
 .board-item .item-wrap .link-icon {
    display: block;
    color: #fff;

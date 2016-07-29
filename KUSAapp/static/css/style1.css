@@ -351,6 +351,31 @@ header .scrolldown a {
    transition: all .3s ease-in-out;
 }
 
+
+/* Footer */
+#footer {
+	height:50px;
+	width:100%;
+	color:black;
+	font-size:20px;
+}
+#footer-desc {
+	float:left;
+	background:#303030;
+	margin-top:10px;
+	display:inline-block;
+}
+#toTop {
+	/*height: 20px;
+	width: 20px;*/
+	margin-top:10px;
+	float:right;
+	display:inline-block;
+	font-size:20px;
+}
+#toTop a {
+	text-decoration: none;
+}
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
@@ -503,16 +528,6 @@ ul#nav li.current a { color: #F06000; }
 
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -916,62 +931,6 @@ ul#nav li.current a { color: #F06000; }
 	width:75px;
 }
 
-/* Footer */
-#footer {
-	height:120px;
-	width:100%;
-	background-image: url("../images/grey_wash_wall.png");
-	font-size:16px;
-}
-#footer-desc {
-	float:left;
-	color:lightgrey;
-	margin-top:10px;
-	display:inline-block;
-}
-#toTop {
-	/*height: 20px;
-	width: 20px;*/
-	margin-top:10px;
-	float:right;
-	display:inline-block;
-	font-size:20px;
-}
-#toTop a {
-	text-decoration: none;
-}
-
-/********************* * NAVIGATION * *********************/
-
-/* I put navigation separate to the layout as there can be a number of navigation points under their sub-headings */
-
-/* Main (horizontal) Navigation */
-
-/* Left Navigation */
-
-/* Right Navigation */
-
-/* Breadcrumb Navigation */
-
-/********************* * FORMS * *********************/
-	
-/* Any form formatting that varies from the common formatting, if there are multiple differently formatted forms, then use sub-headings */
-
-/********************* * TABLES * *********************/
-
-/* Same deal as forms */
-
-/********************* * LISTS * *********************/
-
-/* Same deal as forms and tables */
-
-/********************* * CONTENT * *********************/
-
-/* Any specific formatting for particular pages, grouped by sub-headings for the page the same way as forms, tables and lists */
-
-/********************* * CSS SUPPORT * *********************/
-
-
 
 
 
@@ -1240,6 +1199,4 @@ call-to-action .button {
 	font-family: 'opensans-semibold', sans-serif; 
 	color: #D8D8D8;
 }
-
-
 
